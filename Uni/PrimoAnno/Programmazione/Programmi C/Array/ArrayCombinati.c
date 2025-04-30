@@ -3,14 +3,14 @@
 int main(){
     //combina due array e metti in output i valori alternati
 
-    /*
+    
     //Versione con vettori statici
     int vet1[]={2,5,-1,8,19,10};
     int vet2[]={7,3,18,11,20,4};
     int lenV1=sizeof(vet1)/sizeof(vet1[0]);
     int lenV2=sizeof(vet2)/sizeof(vet2[0]);
     int lenV3=lenV1+lenV2;
-    int vet3[lenV3]; //occhio alla dichiarazione del vettore, mai scrivere vet[]={};
+    int vet3[lenV3]; //vet[]={} = Errore, vettore nullo
     int c1=0;
     int c2=0;
     
@@ -31,13 +31,9 @@ int main(){
     }
     
     /*Costi computazionali:
-        Complessità temporale = o(n) / O(n)
-        Complessità spaziale = o(n) / O(n)
-    */
-    
-    //Versione con vettori dinamici
-    
-   
+        Complessità temporale = O(n)
+        Complessità spaziale = O(1)
+    */  
 }
 
 

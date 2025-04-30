@@ -9,7 +9,7 @@
 
 /*
 int main(){
-    //definizione di una prima struct di tipo persona 
+    //Ex1 definizione di una prima struct di tipo persona 
     struct Persona persona;   //richiamo la struct nel main 
 
     printf("Inserisci il nome:");
@@ -31,7 +31,7 @@ int main(){
 
 /*
 int main(){
-//calcolo dell'età media di un gruppo di persone
+//Ex2 calcolo dell'età media di un gruppo di persone
     struct Persona persona[5];   //Per inserire più valori dentro una struct persona bisogna costruire un vettore
 
     for(int i=0;i<5;i++){
@@ -54,7 +54,8 @@ int main(){
 
 }*/
 
-//Definizione di una struttura libro e stampa dei dati 
+/*
+//Ex4 Definizione di una struttura libro e stampa dei dati 
 struct Libro
 {
   char nome[50];
@@ -70,14 +71,44 @@ int main(){
     printf("Inserisci l'isbm: ");
     scanf("%s",libro.isbm);
     printf("Inserisci il prezzo: ");
-    scanf("%f",&libro.prezzo);
+    scanf("%lf",&libro.prezzo);
 
-    printf("Il libro: %s, con codice: %s costa: %d euro ",libro.nome,libro.isbm,libro.prezzo);
+    printf("Il libro: %s,con codice: %s costa: %.2f euro ",libro.nome,libro.isbm,libro.prezzo); //con .2f ho troncato i valori del prezzo
+}*/
 
-
-    
-    
-
-    
-    
+//calcolo del totale di una fattura con più elementi usando una struttura "Prodotto"
+struct Prodotto
+{
+    char nome[20];
+    char barCode[30];
+    double prezzo[200];
+};
+int fattura(double *prezzo,int sc){
+    double somma=0;
+    for(int i=0;i<sc;i++){
+        somma+=prezzo[i];
+    }
+return somma;
 }
+
+int main(){
+    struct Prodotto prodotto;
+    int sc=0;
+
+    printf("Quanti prodotti vuoi inserire?");
+    scanf("%d",&sc);
+
+    for(int i=0; i<sc;i++){
+        printf("Inserisci il nome del prodotto:");
+        scanf("%s",prodotto.nome[i]);
+        printf("Inserisci il codice a barre:");
+        scanf("%s",prodotto.barCode[i]);
+        printf("Inserisci il prezzo:");
+        scanf("%lf",&prodotto.prezzo[i]);
+    }
+    
+    double fax=fattura(prodotto.prezzo,sc);
+
+    printf("La fattura ammonta a:%lf",fax);
+}
+
