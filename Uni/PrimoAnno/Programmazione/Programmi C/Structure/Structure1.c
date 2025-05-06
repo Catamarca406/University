@@ -76,8 +76,8 @@ int main(){
     printf("Il libro: %s,con codice: %s costa: %.2f euro ",libro.nome,libro.isbm,libro.prezzo); //con .2f ho troncato i valori del prezzo
 }*/
 
-//calcolo del totale di una fattura con più elementi usando una struttura "Prodotto"
-struct Prodotto
+//Ex5 calcolo del totale di una fattura con più elementi usando una struttura "Prodotto"
+/*struct Prodotto
 {
     char nome[20];
     char barCode[30];
@@ -110,5 +110,45 @@ int main(){
     double fax=fattura(prodotto.prezzo,sc);
 
     printf("La fattura ammonta a:%lf",fax);
+}*/
+
+//Ex6 definizione di una struttura Studente con voto e calcolo della media
+struct Studente
+{
+    char nome[20];
+    char cognome[20];
+    char classe[20];
+    float voto[];
+};
+float mediaVoti(float *voto[],int sc){
+    float somma=0;
+    for(int i=0;i<sc;i++){
+        somma+=*voto[i];
+    }
+    int media=somma/sc;
+    return media;
 }
+int main(){
+    struct Studente studente;
+    int sc=0;
+
+    printf("Inserisci il nome dello studente: ");
+    scanf("%s",studente.nome);
+    printf("Inserisci il cognome dello studente: ");
+    scanf("%s",studente.cognome);
+    printf("Quanti voti devi registrare? ");
+    scanf("%d",&sc);
+
+    for(int i=0;i<sc;i++){
+        printf("Inserisci il voto:");
+        scanf("%f",&studente.voto[i]);
+    }
+
+    float media=0;
+    media=mediaVoti(studente.voto,sc);
+    printf("La media dello studente: %s %s e': %f",studente.nome,studente.cognome,studente.voto);
+    
+    
+}
+
 
