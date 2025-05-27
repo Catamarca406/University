@@ -1,28 +1,27 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-char *banner_x(int n,int i){
-    char *array = malloc((n+1));
 
-    for (int j=0;j<n;j++){
-        if (j==i || j==n-1-i){
-            array[j]='*';
+char *banner(int n, int s){ //s sarebbe la riga selezionata e n la grandezza max della x
+    char *stringa = malloc((n+1));
+    for(int i=0; i<=n; i++){
+        //ad sarebbe asterisco destra che si ottiene sottraendo alla lunghezza la riga scelta
+        if(i==s || i==(n-s)){
+            stringa[i]='*';
+            
         }else{
-            array[j]=' ';
+            stringa[i]='-';
         }
     }
-    array[n]='\0';
-    return array;
+    stringa[n]='\0';
+    return stringa;
 }
-
-
-
-
 int main(){
-
-    int valore_n=7; //maggiore uguale a 3 e dispari
-    int valore_i=1;
-    char *risultato = banner_x(valore_n,valore_i);
-    printf("%s", risultato);
-    free(risultato);
+    int n=7 ;
+    int i=0;
+    char *result=banner(n,i);
+    printf("%s", result);
+    free (result);
 }
+//fatto un report del file dei problemi che ho avuto con le stringhe e la funzione
+// ella cartella università/problemi riscontrat0
