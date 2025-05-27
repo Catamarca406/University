@@ -1,0 +1,21 @@
+nelle strutture in C:
+si dichiarano così
+
+typedef struct contact{  typedef vuol dire che lo fai diventare proprio un tipo di valore tipo int o char
+        char *nome;
+        char *telefono;
+        int eta;
+}contact;
+
+
+struct contact{ crea un entità singola contatto con i suoi valori dentro modificabili
+
+}contact;
+
+se vuoi inserire dei valori stringa dentro ad una struttura, puoi fare tipo:
+
+contact utente1 = {"Numero di telefono", "Nome", 32};  funziona sia con stringhe statiche che dinamiche
+oppure strcpy(utente.numero, "3223233");  funziona sia con stringhe statiche che dinamiche
+
+
+
