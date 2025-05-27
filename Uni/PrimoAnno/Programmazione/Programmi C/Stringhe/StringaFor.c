@@ -1,18 +1,18 @@
 #include <stdio.h>
 #include <string.h>
-int main(){
-    char s[] = "programma stringa";
-    int count=0;
+//Conto il numero max di lettere consecutive
 
-    for(int i=0; i<strlen(s);i++){
-        for(int j=1; j<strlen(s); j++){
-            if(s[j]==s[j+1]){
+int main(){
+    char s[] = "programmaaaa stringa";   
+    int count=0;
+    int temp=0;
+    int j=1;
+    for(int i=0; i<strlen(s);i++,j++){  
+            if(s[i]==s[j] && s[j]!="\0"){
                 count++;
-                printf("%d",count);
+                temp=count;
             }            
         }
+        printf("%d\n",count);
     }
-   
-
     
-}
