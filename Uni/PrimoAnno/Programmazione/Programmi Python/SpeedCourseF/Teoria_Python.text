@@ -1,0 +1,74 @@
+#liste:
+    list=[10,"try",3.14]
+    list.append(9)      #inserimento
+    list.remove(9)      #rimozione
+    list[0]=11          #modifica
+
+#tuple:
+    tuple=(10,"move",32.1)
+    list=list(tuple)
+    list.append(3)
+
+
+#dizionari: 
+    dict= {key:value}
+    dict[(1,2)]
+
+    def f(x)
+        return x*2
+    dict[True] =f(5)
+    print(dict)
+    
+    chiavi != strutture dati complesse 
+    valori != strutture dati complesse
+    
+
+#matrici:
+    lista di liste
+    ogni sottolista rappresenta una riga della matrice
+
+    matrice = [(1,2),(2,1)]
+    print(matrice)
+    
+    for i in range(2)
+        for j in range(2):
+            print(matrice[i][j],end=" ")
+        
+    si possono fare le stesse operazioni che si fanno sui vettori
+    ma per operare su esse per l'output serve utilizzare un doppio for (riga-colonna)
+
+    Accedere agli elementi di una matrice: 
+        matrice[i][j]
+
+    Ogni riga deve avere: len(righe)=len(colonne)
+
+    Operazioni: Somma,Prodotto,Differenza,Rapporto
+        Stringa viene spezzata in array di caratteri: ciao= c i a o 
+        Int,float ecc non vengono inseriti singolarmente perché non sarebbero iterabili dato che non hanno len
+
+Try-catch:
+try:
+    codice
+except Exception/IndexError as e:             
+    print("Ho dato eccezione:",e)
+
+ utilizzo IndexError se lavoro con gli indici
+ utilizzo TypeError se lavoro con tipi 
+ utilizzo Exception se lavoro con cose più generiche
+
+
+ Funzioni:
+    def nome():
+        return 0
+
+    def nome(a: str,b:str) ->str:               #
+        return a+b
+
+    a= "Ciao"
+    b="Mondo"
+    c=nome(a,b)
+    print(c)
+
+    Best practics: 
+    1- Dare un nome sensato alla funzione
+    2- Dare il tipo alla funzione 

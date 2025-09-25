@@ -8,7 +8,6 @@ typedef struct int_array{
 
 int_array pos_max(float *v, int n){
     
-    
     int j=0;
     float max =v[0];
     int ndim=0;

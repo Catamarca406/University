@@ -13,7 +13,6 @@ struct lista_i
     int cap;
     int dim;
 };
-
 typedef struct lista_i lista_i; // dichiaro un'alias per la struct
 
 lista_i init()
