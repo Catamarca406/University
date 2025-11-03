@@ -30,8 +30,9 @@ Output: una permutazione < $a_1 ', a_2 ',..., a_n '$ > della sequenza di input t
 Questo algoritmo sfrutta un approccio incrementale, confronta un elemento in una certa posizione k con tutti gli altri n-2 volte (k=0 , n-2 evita che ci sia il confronto con se stesso, arrivati a quel punto il vettore sarà già ordinato!)	
 
 <span style="color:rgb(255, 0, 0)">Def</span>:
-Estende l'ordinamento da k a k+1 elementi, scegliendo il minimo degli n-k elementi non ancora ordinati e mettendolo in posizione k+1 		
-<span style="color:rgb(255, 255, 0)">![400](Pastedimage20251026232211.png)</span>
+Estende l'ordinamento da k a k+1 elementi, scegliendo il minimo degli n-k elementi non ancora ordinati e mettendolo in posizione k+1 	
+
+![|544x279](../../imm/Pastedimage20251026232211.png)
 
 ##### PseudoCodice: 
 > [!Example]  
@@ -73,7 +74,7 @@ Calcolo la complessità in Lower Bound:
 #### Insertion Sort
 Anche qui viene utilizzato un <span style="color:rgb(255, 255, 0)">approccio incrementale</span>: estende l'ordinamento da k a k+1 elementi, posizionando l'elemento (k+1) - esimo nella posizione corretta rispetto ai primi k elementi. 
 
-![](../../imm/Pastedimage20251027155629.png)
+![|634x333](../../imm/Pastedimage20251027155629.png)
 
 ##### PseudoCodice
 >[!Example]

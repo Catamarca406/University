@@ -46,7 +46,7 @@ Dato un problema <span style="color:rgb(0, 176, 240)">P</span> con complessità 
 Abbiamo un gap di log n tra upper bound e lower bound!
 
 
-![687x200](Pastedimage20251102233059.png)
+![687x200](../../imm/Pastedimage20251102233059.png)
 
 Notare: Tutti gli algoritmi citati prima sono algoritmi di ordinamento per confronto.
 
@@ -76,7 +76,7 @@ Albero di decisione - Descrive i confronti che l'algoritmo esegue quando opera s
 - Nodo foglia: 
 	-modella una risposta (output) dell'algoritmo: <span style="color:rgb(0, 176, 240)">permutazione degli elementi</span> 
 
-![693x264](Pastedimage20251103145356.png)
+![693x264](../../imm/Pastedimage20251103145356.png)
 
 I numeri segnati nell'albero corrispondono ai pedici dell'input.
 Osservazioni:

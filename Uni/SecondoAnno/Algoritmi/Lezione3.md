@@ -1,6 +1,6 @@
 #Algoritmi 
 
-![ 580](Pastedimage20251020164904.png) 
+![|530x397](../../imm/Pastedimage20251020164904.png) 
 
 # Ricerca di elementi in una lista
 ## Ricerca di un elemento in un array / lista non ordinata
@@ -172,7 +172,7 @@ Esercizi:
 
 ##### Tecnica albero della ricorsione
 
-![Pasted image 20251022152506](Pastedimage20251022152506.png)
+![|221x589](Pastedimage20251022152506.png)
 
 <span style="color:rgb(0, 176, 240)">Quanto mi costa un nodo?</span> ---> uno
 <span style="color:rgb(0, 176, 240)">Quanti nodi ha un albero?</span>  ---> <span style="color:rgb(0, 176, 240)">n</span>
@@ -180,7 +180,7 @@ Esercizi:
 $\Rightarrow$ T(<span style="color:rgb(0, 176, 240)">n</span>) = $\Theta$(<span style="color:rgb(0, 176, 240)">n</span>) 
 
 Stesso esempio ma con il costo di ogni singolo nodo pari a n:
-![Pasted image 20251022152802](Pastedimage20251022152802.png)
+![|232x619](../../imm/Pastedimage20251022152802.png)
 
 <span style="color:rgb(0, 176, 240)">Quanto mi costa un nodo?</span> ---> al più n
 <span style="color:rgb(0, 176, 240)">Quanti nodi ha un albero?</span>  ---> <span style="color:rgb(0, 176, 240)">n</span>
@@ -219,14 +219,14 @@ Allora sicuramente possiamo dire che T(n) è sia un O($n^2$) che un $\Omega (n^2
 T(<span style="color:rgb(0, 176, 240)">n</span>) = 2T(<span style="color:rgb(0, 176, 240)">n</span>-1) + 1
 T(<span style="color:rgb(0, 176, 240)">1</span>) = 1 
 
-![Pasted image 20251021182931](Pastedimage20251021182931.png)
+![|506x432](../../imm/Pastedimage20251021182931.png)
 
 
 
 T(<span style="color:rgb(0, 176, 240)">n</span>) = 2T(<span style="color:rgb(0, 176, 240)">n</span>-1) + <span style="color:rgb(0, 176, 240)">n</span> 
 T(<span style="color:rgb(0, 176, 240)">1</span>) = 1 
 
-![Pasted image 20251022113826](Pastedimage20251022113826.png)
+![|509x450](../../imm/Pastedimage20251022113826.png)
 
 
 ##### Analisi dell'albero della ricorsione 
@@ -238,13 +238,13 @@ T(<span style="color:rgb(0, 176, 240)">1</span>) = 1
 				 T(<span style="color:rgb(0, 176, 240)">1</span>) = 1
 
 
-![600](Pastedimage20251022145623.png)
+![|582x436](../../imm/Pastedimage20251022145623.png)
 
 In questo caso vogliamo dire che l' equazione T(n) = T(n/3) + T(2/3n) +n sia un $\Theta$(n), però per far ciò dobbiamo prima verificare che sia un O e un $\Omega$.
 $\Rightarrow$ Applico un Upper Bound.
 	Sapendo che T(n) non possa mai andare oltre O( $log_{3/2} \ (n)$ ) calcoliamo O quindi ho $log_{3/2} \ (n)$ nodi con costo n allora: T(n) = O(n log n) 
 
-![ 600](Pastedimage20251022150806.png)
+![|542x406](../../imm/Pastedimage20251022150806.png)
 
 $\Rightarrow$ Caso opposto, ora dobbiamo controllare che la nostra equazione sia un $\Omega$: 
 	Poniamo T(<span style="color:rgb(0, 176, 240)">n</span>) $\geq$ $log_3 (n)$, come prima, so che ho $log_3 (n)$ nodi con costo singolo pari a n.
@@ -263,13 +263,13 @@ Idea:
 2) Usare induzione matematica per provare la soluzione
 3) Risolvere rispetto alle costanti
 
-![600](Pastedimage20251022180434.png)
+![|512x501](../../imm/Pastedimage20251022180434.png)
 
 Esercizi 
 		risolvere utilizzando il metodo della sostituzione:
 		T(n) = 4T(n/2) +n, T(1) = 1
-![600](Pastedimage20251024162855.png)
-![600](Pastedimage20251024162944.png)
+![|601x601](../../imm/Pastedimage20251024162855.png)
+![|600x853](../../imm/Pastedimage20251024162944.png)
 
 ### Tecnica del divide et impera 
 Ci sono algoritmi basati sulla tecnica del divide et impera:
@@ -288,19 +288,19 @@ Ci sono algoritmi basati sulla tecnica del divide et impera:
 
 Possiamo verificare tale tecnica tramite algoritmi visti in precedenza:
 
-![ 600](Pastedimage20251023233713.png)
+![|526x374](../../imm/Pastedimage20251023233713.png)
 
 
 
 
 
-![ 600](Pastedimage20251023233734.png)
+![|529x368](../../imm/Pastedimage20251023233734.png)
 
 
 #### Teorema Master: enunciato informale
 
 Possiamo generalizzare ciò detto in precedenza tramite il Teo. Master, abbiamo: 
-			![ 300](Pastedimage20251023234131.png)
+			![|460x116](../../imm/Pastedimage20251023234131.png)
 Dobbiamo chiederci, quale va più velocemente a infinito?
 	Stesso ordine asintotico $\rightarrow$ T(<span style="color:rgb(0, 176, 240)">n</span>) = $\Theta$(<span style="color:rgb(0, 176, 240)">f(n) log n</span>) 
 	Se una delle due è "polinomialmente" più veloce 
@@ -326,5 +326,5 @@ ha soluzione:
 
 Esempi delle tre soluzioni applicate a determinate equazioni di ricorrenza:
 
-![480](Pastedimage20251023235719.png)
-![480](Pastedimage20251023235855.png)
+![|480x339](../../imm/Pastedimage20251023235719.png)
+![|479x250](../../imm/Pastedimage20251023235855.png)
