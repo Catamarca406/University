@@ -39,7 +39,7 @@ Struttura dati Heap associata ad un insieme S = albero binario radicato con le s
 
 L'ordinamento è presente in verticale:
 ![Pasted image 20251029155158](../imm/Pasted%20image%2020251029155158.png)
-
+	
 Proprietà salienti degli Heap
 1) il <span style="color:rgb(255, 255, 0)">Massimo</span> è contenuto <span style="color:rgb(255, 255, 0)">nella radice</span>
 2) L'albero con n nodi ha <span style="color:rgb(255, 255, 0)">altezza O(log n)</span>
