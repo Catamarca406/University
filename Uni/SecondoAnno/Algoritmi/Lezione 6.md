@@ -46,7 +46,7 @@ Dato un problema <span style="color:rgb(0, 176, 240)">P</span> con complessità 
 Abbiamo un gap di log n tra upper bound e lower bound!
 
 
-![687x200](../imm/Pasted%20image%2020251102233059.png)
+![687x200](Pasted%20image%2020251102233059.png)
 
 Notare: Tutti gli algoritmi citati prima sono algoritmi di ordinamento per confronto.
 

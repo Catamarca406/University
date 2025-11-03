@@ -1,4 +1,7 @@
 {
   "spellcheck": false,
-  "useMarkdownLinks": true
+  "useMarkdownLinks": true,
+  "attachmentFolderPath": "imm",
+  "alwaysUpdateLinks": true,
+  "newLinkFormat": "relative"
 }

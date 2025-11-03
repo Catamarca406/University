@@ -38,7 +38,7 @@ Struttura dati Heap associata ad un insieme S = albero binario radicato con le s
 3) chiave(padre(v)) $\geq$ chiave(v) per ogni nodo v diverso dalla radice 
 
 L'ordinamento è presente in verticale:
-![Pasted image 20251029155158](../imm/Pasted%20image%2020251029155158.png)
+![Pasted image 20251029155158|577x409](Pasted%20image%2020251029155158.png)
 	
 Proprietà salienti degli Heap
 1) il <span style="color:rgb(255, 255, 0)">Massimo</span> è contenuto <span style="color:rgb(255, 255, 0)">nella radice</span>
