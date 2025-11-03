@@ -172,7 +172,7 @@ Esercizi:
 
 ##### Tecnica albero della ricorsione
 
-![Pasted image 20251022152506](Pasted%20image%2020251022152506.png)
+![Pasted image 20251022152506](../../imm/Pasted%20image%2020251022152506.png)
 
 <span style="color:rgb(0, 176, 240)">Quanto mi costa un nodo?</span> ---> uno
 <span style="color:rgb(0, 176, 240)">Quanti nodi ha un albero?</span>  ---> <span style="color:rgb(0, 176, 240)">n</span>
@@ -180,7 +180,7 @@ Esercizi:
 $\Rightarrow$ T(<span style="color:rgb(0, 176, 240)">n</span>) = $\Theta$(<span style="color:rgb(0, 176, 240)">n</span>) 
 
 Stesso esempio ma con il costo di ogni singolo nodo pari a n:
-![Pasted image 20251022152802](Pasted%20image%2020251022152802.png)
+![Pasted image 20251022152802](../../imm/Pasted%20image%2020251022152802.png)
 
 <span style="color:rgb(0, 176, 240)">Quanto mi costa un nodo?</span> ---> al più n
 <span style="color:rgb(0, 176, 240)">Quanti nodi ha un albero?</span>  ---> <span style="color:rgb(0, 176, 240)">n</span>
@@ -219,14 +219,14 @@ Allora sicuramente possiamo dire che T(n) è sia un O($n^2$) che un $\Omega (n^2
 T(<span style="color:rgb(0, 176, 240)">n</span>) = 2T(<span style="color:rgb(0, 176, 240)">n</span>-1) + 1
 T(<span style="color:rgb(0, 176, 240)">1</span>) = 1 
 
-![Pasted image 20251021182931](Pasted%20image%2020251021182931.png)
+![Pasted image 20251021182931](../../imm/Pasted%20image%2020251021182931.png)
 
 
 
 T(<span style="color:rgb(0, 176, 240)">n</span>) = 2T(<span style="color:rgb(0, 176, 240)">n</span>-1) + <span style="color:rgb(0, 176, 240)">n</span> 
 T(<span style="color:rgb(0, 176, 240)">1</span>) = 1 
 
-![Pasted image 20251022113826](Pasted%20image%2020251022113826.png)
+![Pasted image 20251022113826](../../imm/Pasted%20image%2020251022113826.png)
 
 
 ##### Analisi dell'albero della ricorsione 

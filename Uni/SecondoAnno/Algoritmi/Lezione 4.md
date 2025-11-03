@@ -73,7 +73,7 @@ Calcolo la complessità in Lower Bound:
 #### Insertion Sort
 Anche qui viene utilizzato un <span style="color:rgb(255, 255, 0)">approccio incrementale</span>: estende l'ordinamento da k a k+1 elementi, posizionando l'elemento (k+1) - esimo nella posizione corretta rispetto ai primi k elementi. 
 
-![](../../imm/Pasted%20image%2020251027155629.png%20)
+![../../imm/Pasted image 20251027155629.png ](../../imm/Pasted%20image%2020251027155629.png%20)
 
 ##### PseudoCodice
 >[!Example]
@@ -271,4 +271,5 @@ QuickSort randomizzato (randomizzazione $\neq$ caso medio)
 
 
 ![image](../../imm/image.png)
+
 

@@ -83,7 +83,7 @@ T(n) =
 - spesso è difficile fare assunzioni realistiche
     
 
-![Pasted image 20251017144352](Pasted%20image%2020251017144352.png)
+![Pasted image 20251017144352](../../imm/Pasted%20image%2020251017144352.png)
 ## Una grande idea: Notazione Asintotica
 
 ### Notazione asintotica: intuizioni
@@ -121,7 +121,7 @@ l’assunzione implicita è che guardo come si comporta l’algoritmo su istanze
 
 assunzione: ogni pesata richiede un minuto
 
-![Pasted image 20251017152028](Pasted%20image%2020251017152028.png)
+![Pasted image 20251017152028](../../imm/Pasted%20image%2020251017152028.png)
 ## TIpologie di notazioni asintotiche:
 
 ### **O-grande**
@@ -132,7 +132,7 @@ definizione formale:
 
 - f(n) = O(g(n)) se esistono: una costante c > 0 e un certo punto $n_0$ ≥ 0 tali che 0 ≤ f(n) ≤ c g(n) per ogni n ≥ $n_0$
 
-![Pasted image 20251017161850](Pasted%20image%2020251017161850.png)
+![Pasted image 20251017161850](../../imm/Pasted%20image%2020251017161850.png)
 
 Esempi:
 sia f(n) = 2n^2 + 3n, allora
@@ -153,7 +153,7 @@ definizione formale:
 
 - f(n) = Ω(g(n)) se esistono: una costante c>0 e un certo punto $n_0$ ≥ 0 tali che f(n) ≥ c g(n) ≥ 0 per ogni n ≥ $n_0$
 
-![Pasted image 20251017162005](Pasted%20image%2020251017162005.png)
+![Pasted image 20251017162005](../../imm/Pasted%20image%2020251017162005.png)
 
 Esempi:
 Sia f(n) = 2$n^2$ -3n, allora
@@ -174,7 +174,7 @@ definizione formale:
 
 f(n) = Θ(g(n)) se esistono: due costanti $c_1$, $c_2$ > 0 e un certo punto $n_0$ ≥ 0 tali che $c_1$g(n) ≤ f(n) ≤ $c_2$g(n) per ogni n≥ $n_0$
 
-![Pasted image 20251017162023](Pasted%20image%2020251017162023.png)
+![Pasted image 20251017162023](../../imm/Pasted%20image%2020251017162023.png)
 
 Esempi:
 
@@ -273,7 +273,7 @@ Un'altra semplice proprietà per capire la velocità di una funzione è:
 
 
 
-![Pasted image 20251018181637](Pasted%20image%2020251018181637.png)
+![Pasted image 20251018181637](../../imm/Pasted%20image%2020251018181637.png)
 
 ## Velocità asintotica di funzioni composte
 date f(n) e g(n) 
@@ -287,7 +287,7 @@ date f(n) e g(n),
 			La velocità ad andare a infinito della funzione f(n) e g(n) e la velocità di f(n) "più" la velocità di g(n)
 			La velocità ad andare a infinito della funzione f(n)/g(n) e la velocità di f(n) "meno" la velocità di g(n)
 	Esempio:
-				![Pasted image 20251018202518](Pasted%20image%2020251018202518.png)
+				![Pasted image 20251018202518](../../imm/Pasted%20image%2020251018202518.png)
 
 
 ## Usare la notazione asintotica nelle analisi 
