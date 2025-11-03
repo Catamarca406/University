@@ -94,7 +94,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "SecondoAnno/Algoritmi/Lezione 6.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +103,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Riferimenti a Lezione 6"
+              "title": "Riferimenti"
             }
           },
           {
@@ -113,12 +112,11 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "SecondoAnno/Algoritmi/Lezione 6.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Collegamenti in uscita da Lezione 6"
+              "title": "Collegamenti in uscita"
             }
           },
           {
@@ -142,13 +140,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "SecondoAnno/Algoritmi/Lezione 6.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Struttura di Lezione 6"
+              "title": "Struttura"
             }
           },
           {
@@ -195,8 +192,9 @@
       "bases:Create new base": false
     }
   },
-  "active": "e3c2b74a3c79229a",
+  "active": "6a0ce279bc1e0c96",
   "lastOpenFiles": [
+    "SecondoAnno/Algoritmi/Lezione 6.md",
     "PrimoAnno/Analisi1/Dim_Orale_Analisi.pdf",
     "SecondoAnno/Algoritmi/Lezione 5.md"
   ]
