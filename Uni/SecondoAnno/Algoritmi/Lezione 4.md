@@ -252,7 +252,7 @@ Intuizioni sul caso medie ... (istanze equiprobabili)
 - E se la partizione fosse sempre proporzionale 99 a 1?
 - Nota: sembrano partizioni piuttosto sbilanciate...
 
-![image](Pastedimage20251029142342.png)
+![image](../../imm/Pastedimage20251029142342.png)
 La complessità rimane O(n log n)
 
 Se le istanze non sono equiprobabili: 
