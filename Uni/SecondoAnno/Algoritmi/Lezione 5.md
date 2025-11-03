@@ -45,7 +45,7 @@ Proprietà salienti degli Heap
 2) L'albero con n nodi ha <span style="color:rgb(255, 255, 0)">altezza O(log n)</span>
 3) Gli heap con struttura rafforzata possono essere rappresentati in un <span style="color:rgb(255, 255, 0)">array di dimensione pari a n</span> 
 
-![700 ](Pasted%20image%2020251029161810.png%20)
+![700 ](../../imm/Pastedimage20251029161810.png)
 
 L'altezza n è sicuramente $\geq$ 1 (ipotetica foglia) + sommatoria $2^i$ (altezza di un albero binario) = 1 (foglia) + $2^h$ -1  (risultato notevole della sommatoria) = $2^h$ 
 $\Rightarrow$ h $\leq$ $log_2$ n
