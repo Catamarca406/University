@@ -132,7 +132,7 @@ definizione formale:
 
 - f(n) = O(g(n)) se esistono: una costante c > 0 e un certo punto $n_0$ ≥ 0 tali che 0 ≤ f(n) ≤ c g(n) per ogni n ≥ $n_0$
 
-![|393x264](Pastedimage20251017161850.png)
+![|393x264](../../imm/Pastedimage20251017161850.png)
 
 Esempi:
 sia f(n) = 2n^2 + 3n, allora
@@ -153,7 +153,7 @@ definizione formale:
 
 - f(n) = Ω(g(n)) se esistono: una costante c>0 e un certo punto $n_0$ ≥ 0 tali che f(n) ≥ c g(n) ≥ 0 per ogni n ≥ $n_0$
 
-![|481x279](Pastedimage20251017162005.png)
+![|481x279](../../imm/Pastedimage20251017162005.png)
 
 Esempi:
 Sia f(n) = 2$n^2$ -3n, allora
@@ -174,7 +174,7 @@ definizione formale:
 
 f(n) = Θ(g(n)) se esistono: due costanti $c_1$, $c_2$ > 0 e un certo punto $n_0$ ≥ 0 tali che $c_1$g(n) ≤ f(n) ≤ $c_2$g(n) per ogni n≥ $n_0$
 
-![|482x283](Pastedimage20251017162023.png)
+![|482x283](../../imm/Pastedimage20251017162023.png)
 
 Esempi:
 
@@ -287,7 +287,7 @@ date f(n) e g(n),
 			La velocità ad andare a infinito della funzione f(n) e g(n) e la velocità di f(n) "più" la velocità di g(n)
 			La velocità ad andare a infinito della funzione f(n)/g(n) e la velocità di f(n) "meno" la velocità di g(n)
 	Esempio:
-				![](../../imm/Pastedimage20251018202518.png)
+				![|531x92](../../imm/Pastedimage20251018202518.png)
 
 
 ## Usare la notazione asintotica nelle analisi 
