@@ -172,7 +172,7 @@ Esercizi:
 
 ##### Tecnica albero della ricorsione
 
-![|221x589](Pastedimage20251022152506.png)
+![|221x589](../../imm/Pastedimage20251022152506.png)
 
 <span style="color:rgb(0, 176, 240)">Quanto mi costa un nodo?</span> ---> uno
 <span style="color:rgb(0, 176, 240)">Quanti nodi ha un albero?</span>  ---> <span style="color:rgb(0, 176, 240)">n</span>

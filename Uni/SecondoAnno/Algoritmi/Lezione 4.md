@@ -271,5 +271,3 @@ QuickSort randomizzato (randomizzazione $\neq$ caso medio)
 - Il caso peggiore determinato solo dal generatore di numeri casuali
 
 
-![](../../imm/image.png)
-
