@@ -73,7 +73,7 @@ Calcolo la complessità in Lower Bound:
 #### Insertion Sort
 Anche qui viene utilizzato un <span style="color:rgb(255, 255, 0)">approccio incrementale</span>: estende l'ordinamento da k a k+1 elementi, posizionando l'elemento (k+1) - esimo nella posizione corretta rispetto ai primi k elementi. 
 
-![](Pasted%20image%2020251027155629.png%20)
+![](../../imm/Pasted%20image%2020251027155629.png%20)
 
 ##### PseudoCodice
 >[!Example]
@@ -86,7 +86,7 @@ Anche qui viene utilizzato un <span style="color:rgb(255, 255, 0)">approccio inc
 #### Bubble Sort
 Segue un approccio incrementale: esegue n-1 scansioni. Ad ogni scansione guarda coppie di elementi adiacenti e li scambia se non sono nell'ordine corretto.
 
-![400](Pasted%20image%2020251027160739.png%20)
+![400](../../imm/Pasted%20image%2020251027160739.png%20)
 
 ##### PseudoCodice
 >[!Example] 
@@ -114,7 +114,7 @@ Divido il vettore a metà, da i (inizio) fino a m (divisione perfetta a metà) ,
 
 <span style="color:rgb(255, 0, 0)">Esempio</span> <span style="color:rgb(255, 0, 0)">di</span>  <span style="color:rgb(255, 0, 0)">esecuzione</span><span style="color:rgb(255, 0, 0)">:</span> 
 
-![480](Pasted%20image%2020251028144319.png%20)
+![480](../../imm/Pasted%20image%2020251028144319.png%20)
 
 
 ##### Procedura Merge
@@ -216,7 +216,7 @@ Quando inf $\geq$ sup scambio il perno con l'elemento in "posizione sup".
 >4) --- QuickSort (A, m+1, f)
  
 Esempio di Esecuzione
-![480](Pasted%20image%2020251028234853.png%20)
+![480](../../imm/Pasted%20image%2020251028234853.png%20)
 
 Correttezza: 
 L'algoritmo dopo aver chiamato Partition è corretto perché: A[ i: m-1 ] contiene elem $\leq$ del perno, A[m] il perno, A[ m+1, f ] elem > del perno.
@@ -240,7 +240,7 @@ La complessità in questo caso è:
  O(n log n), partizionamento sempre bilanciato: 
 	 Ogni livello costa n, per arrivare fino alle foglie dell'albero impiego tempo logaritmico.
 	 
-![600](Pasted%20image%2020251029135540.png%20)
+![600](../../imm/Pasted%20image%2020251029135540.png%20)
 
 
 Intuizioni sul caso medie ... (istanze equiprobabili)
@@ -252,7 +252,7 @@ Intuizioni sul caso medie ... (istanze equiprobabili)
 - E se la partizione fosse sempre proporzionale 99 a 1?
 - Nota: sembrano partizioni piuttosto sbilanciate...
 
-![600](Pasted%20image%2020251029142342.png%20)
+![image](../../imm/Pasted%20image%2020251029142342.png%20)
 La complessità rimane O(n log n)
 
 Se le istanze non sono equiprobabili: 
@@ -269,4 +269,6 @@ QuickSort randomizzato (randomizzazione $\neq$ caso medio)
 - Nessun input specifico per il quale si verifica il caso peggiore
 - Il caso peggiore determinato solo dal generatore di numeri casuali
 
+
+![image](../../imm/image.png)
 
