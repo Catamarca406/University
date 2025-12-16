@@ -1,5 +1,5 @@
 #Algoritmi 
-# Il problema del dizionario
+ù# Il problema del dizionario
 
 ![670x252](../../imm/image-50.png)
 
@@ -188,7 +188,7 @@ minimizzare # nodi fissata l'altezza $\equiv$  massimizzare altezza fissato # no
 
 #### Come è fatto un albero di Fibonacci di altezza 2?
 
-![[image-70.png]]
+![image-70](../../imm/image-70.png)
 
 *Infatti*: se togliamo ancora un nodo, o diventa sbilanciato, o cambia la sua altezza
 *Nota*: ogni nodo (non foglia) ha fattore di bilanciamento pari (in valore assoluto) a 1.
@@ -198,16 +198,16 @@ minimizzare # nodi fissata l'altezza $\equiv$  massimizzare altezza fissato # no
 $T_{i}$: albero di Fibonacci di altezza i
 	(albero AVL di altezza i con il minimo numero di nodi)
 	
-![[image-71.png]]
+![image-71](../../imm/image-71.png)
 
 *Nota che*: se a $T_{i}$ tolgo un nodo, o diventa sbilanciato, o cambia la sua altezza
 *Inoltre*: ogni nodo (non foglia) ha fattore di bilanciamento pari (in valore assoluto) a 1.
 
 
-![[image-72.png]]
+![image-72](../../imm/image-72.png)
 
 *Lo schema*
-![[image-73.png]]
+![image-73](../../imm/image-73.png)
 
 
 *Lemma* 
@@ -230,13 +230,13 @@ Un albero AVL con n nodi ha altezza h=O(log n)
    	 $n_h \leq n$ 
 
 
-   ![[image-74.png]]
+   ![image-74](../../imm/image-74.png)
 
 
 
 #### Posso usare un albero AVL per implementare un dizionario?
 
-![[image-75.png]]
+![image-75](../../imm/image-75.png)
 
 come implemento *Insert(14)*? e *delete(25)*?
 
@@ -257,7 +257,7 @@ $\Rightarrow$ Manteniamo il bilanciamento tramite opportune *rotazioni*
 
 #### Rotazione di base verso *destra*/*sinistra* sul nodo *v*/*u*
 
-![[image-76.png]]
+![image-76](../../imm/image-76.png)
 
 - Mantiene la proprietà di ricerca
 - Richiede tempo O(1) 
@@ -282,7 +282,7 @@ Sia h l'altezza del sottoalbero destro di v
 
 - L'altezza di T(v) è *h+3*, l'altezza di T(u) è *h+2*, l'altezza di $T_{3}$ è *h* e l'altezza di $T_1$ è *h+1* $\Rightarrow$ $\beta(v)$ = +2 e lo sbilanciamento è provocato da $T_1$ 
 
-![[image-77.png]]
+![image-77](../../imm/image-77.png)
 
 - Si applica una rotazione semplice verso destra su *v*  (e i fattori di bilanciamento di tutti i nodi torneranno ok).
 - 2 sottocasi possibili:
@@ -309,12 +309,12 @@ Sia h l'altezza del sottoalbero destro di v
 - $\Rightarrow$ altezza di T(w) = h+1
 - $\beta(v)$=+2 e sbilanciamento è provocato dal sottoalbero destro di *z*
 
-![[image-81.png|437x306]]
+![437x306](../../imm/image-81.png)
 
 - Applicare *due rotazioni* semplici: una *verso sinistra* sul *figlio sinistro* del *nodo critico* (nodo z), l'altra *verso destra* sul *nodo critico* (nodo v)
 
 
-![[image-82.png|700x162]]
+![700x162](../../imm/image-82.png)
 
 - I fattori di bilanciamento di tutti i nodi tornano ok
 - L' altezza dell'albero dopo la rotazione passa da *h+3* a *h+2* 
@@ -354,7 +354,7 @@ Sia h l'altezza del sottoalbero destro di v
 
 ### Cancellazione con rotazioni a cascata 
 
-![[image-88.png]]
+![image-88](../../imm/image-88.png)
 
 #### Costo delle operazioni
 Tutte le operazioni hanno costo *O (log n)* poiché l'altezza dell'albero è O(log n) e ciascuna rotazione richiede solo tempo costante.

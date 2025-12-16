@@ -2,11 +2,11 @@
 
 # Il problema della coda con priorità 
 
-![[image-93.png]]
+![image-93](../../imm/image-93.png)
 
 ## *Operazioni aggiuntive*
 
-![[image-90.png]]
+![image-90](../../imm/image-90.png)
 
 
 *Applicazioni:* gestione code in risorse condivise, gestione priorità in processi concorrenti progettazione di algoritmi efficienti per diversi problemi fondamentali (es: calcolo cammini minimi in un grafo, minimo albero ricoprente, ordinamento, ecc).
@@ -39,7 +39,7 @@ Lo dimensiono sufficientemente grande, lo tengo *ordinato* in ordine *decrescent
 
 La considero **bidirezionale**:
 
-![[image-94.png|337x55]]
+![337x55](../../imm/image-94.png)
 
 - **FindMin**: $\Theta$(n) (devo guardare tutti gli elementi)
 - **Insert**: O(1) (inserisco in coda o in testa)
@@ -55,7 +55,7 @@ Tengo la lista bidirezionale *ordinata* in ordine *crescente*
 - **DeleteMin**: O(1) (basta far puntare la testa della lista al secondo elemento della lista stessa)
 
 ### Riepilogo implementazioni elementari
-![[image-95.png]]
+![image-95](../../imm/image-95.png)
 
 
 ## Tre implementazioni evolute
@@ -76,7 +76,7 @@ Un d-heap è un albero radicato d-ario con le seguenti proprietà:
 
 #### Esempio
 
-![[image-96.png]]
+![image-96](../../imm/image-96.png)
 
 #### Proprietà
 
@@ -87,10 +87,10 @@ Un d-heap è un albero radicato d-ario con le seguenti proprietà:
 #### Procedure Ausiliarie
 Utili per ripristinare la proprietà di ordinamento a heap su un nodo v che non la soddisfi.
 
-![[image-97.png|642x266]]
+![642x266](../../imm/image-97.png)
 
 ##### findMin
-![[image-98.png|575x105]]
+![575x105](../../imm/image-98.png)
 
 **T(n) = O(1)**
 
@@ -99,7 +99,7 @@ Utili per ripristinare la proprietà di ordinamento a heap su un nodo v che non 
 
 -> *insert(e,8)*
 
-![[ezgif.com-animated-gif-maker (1).gif]]
+![ezgif.com-animated-gif-maker (1)](../../imm/ezgif.com-animated-gif-maker%20(1).gif)
 
 Insert permette di creare un nuovo nodo *v* con elemento *e* e chiave *k*, in modo che diventi una foglia sull'ultimo livello di *T*. La proprietà dell'ordinamento a heap viene ripristinata spingendo il nodo *v* verso l'alto tramite ripetuti scambi di nodi.
 
@@ -107,7 +107,7 @@ Insert permette di creare un nuovo nodo *v* con elemento *e* e chiave *k*, in mo
 
 ##### delete(elem e) e deleteMin
 
-![[ezgif.com-animated-gif-maker.gif]]
+![ezgif.com-animated-gif-maker](../../imm/ezgif.com-animated-gif-maker.gif)
 
 Delete scambia il nodo *v* contenente l'elemento *e* con una qualunque foglia *u* sull'ultimo livello di *T*, e poi elimina *v*. Ripristina infine la proprietà dell'ordinamento a heap spingendo il nodo *u* verso la sua posizione corretta scambiandolo ripetutamente con il proprio padre o con il proprio figlio contenente la chiave più piccola.
 
@@ -117,7 +117,7 @@ Può essere utilizzata anche per implementare la cancellazione del minimo, con c
 O(d $log_d$ n)
 
 ##### decreaseKey(elem e, chiave d)
-![[ezgif.com-animated-gif-maker (2).gif]]
+![ezgif.com-animated-gif-maker (2)](../../imm/ezgif.com-animated-gif-maker%20(2).gif)
 
 DecreaseKey decrementa il valore della chiave nel nodo *v* contenente l'elemento *e* della qualità richiesta *d*. Ripristina poi la proprietà dell'ordinamento a heap spingendo il nodo *v* verso l'alto tramite ripetuti scambi di nodi.
 
@@ -125,7 +125,7 @@ DecreaseKey decrementa il valore della chiave nel nodo *v* contenente l'elemento
 
 ##### increaseKey(elem e, chiave d)
 
-![[ezgif.com-animated-gif-maker (3).gif]]
+![ezgif.com-animated-gif-maker (3)](../../imm/ezgif.com-animated-gif-maker%20(3).gif)
 
 IncreaseKey aumenta il valore della chiave nel nodo contenente l'elemento *e* della quantità richiesta *d*. Ripristina poi la proprietà dell'ordinamento a heap spingendo il nodo *v* verso il basso tramite ripetuti scambi di nodi.
 
@@ -168,7 +168,7 @@ L'approccio conviene quindi per **k log n = o(n), cioè per **
 
 #### Riepilogo 
 
-![[image-103.png]]
+![image-103](../../imm/image-103.png)
 
 $\Rightarrow$ L'obiettivo è implementare una coda di priorità con una struttura dati che non comporti **costi lineari** ! 
 
@@ -181,7 +181,7 @@ Un **albero binomiali** $B_i$ è definito ricorsivamente come segue:
 1. $B_0$ consiste di un *unico* nodo.
 2. Per i > 0, $B_{i+1}$ è ottenuto fondendo due alberi binomiali $B_i$ ponendo la radice dell'uno come figlia della radice dell'altro.  
 
-![[image-104.png]]
+![image-104](../../imm/image-104.png)
 
 #### Proprietà strutturali 
 
@@ -201,9 +201,9 @@ Un heap binomiale è una **foresta (collezione) di alberi binomiali** che gode d
 3. **Ordinamento a heap:** chiave(v) $\geq$ chiave(parent(v)) per ogni nodo v diverso da una delle radici.
 
 
-![[image-105.png|580x429]]
+![580x429](../../imm/image-105.png)
 
-![[image-106.png|579x415]]
+![579x415](../../imm/image-106.png)
 
 #### Proprietà topologiche
 - Dalla proprietà di unicità degli alberi binomiali che lo costituiscono, ne deriva che un heap binomiale di *n* elementi è formato dagli alberi binomiali $B_{i_0}$ , $B_{i_1}$ ,...., $B_{i_h}$ , dove $i_0$ , $i_1$ ,..., $i_h$ corrispondono alle posizioni degli *1* nella rappresentazione in base *2* di *n*.
@@ -214,20 +214,20 @@ Un heap binomiale è una **foresta (collezione) di alberi binomiali** che gode d
 
 Utile per ripristinare la proprietà di unicità in un heap binomiale (ipotizziamo di scorrere la lista delle radici da sinistra verso destra, in ordine crescente rispetto all'indice degli alberi binomiali)
 
-![[image-107.png]]
+![image-107](../../imm/image-107.png)
 
 **T(n): lineare nel numero di alberi binomiali in input**
 Ogni fusione diminuisce di uno il numero di alberi binomiali.
 
 
-![[image-108.png|604x448]]
+![604x448](../../imm/image-108.png)
 
 
 #### Realizzazione 
 
-![[image-109.png|674x385]]
-![[image-110.png|672x417]]
-![[image-111.png|672x222]]
+![674x385](../../imm/image-109.png)
+![672x417](../../imm/image-110.png)
+![672x222](../../imm/image-111.png)
 
 **Tutte le operazioni richiedono tempo T(n) = O(log n)** 
 Durante l'esecuzione della procedura ristruttura esistono infatti al più tre $B_i$ , per ogni i $\geq$ 0
@@ -236,16 +236,16 @@ Durante l'esecuzione della procedura ristruttura esistono infatti al più tre $B
 #### Operazioni viste graficamente
 
 **DeleteMin(H)**
-![[ezgif.com-animated-gif-maker (4).gif]]
+![ezgif.com-animated-gif-maker (4)](../../imm/ezgif.com-animated-gif-maker%20(4).gif)
 
 
 
 **DecreaseMin(H)**
-![[ezgif.com-animated-gif-maker (5).gif]]
+![ezgif.com-animated-gif-maker (5)](../../imm/ezgif.com-animated-gif-maker%20(5).gif)
 
 
 **Merge(H)**
-![[image-114.png|566x425]]
+![566x425](../../imm/image-114.png)
 
 ### Heap di Fibonacci
 
@@ -257,7 +257,7 @@ Analisi sofisticata: i tempi di esecuzione sono **ammortizzati** su sequenze di 
 
 #### Conclusioni
 
-![[image-115.png]]
+![image-115](../../imm/image-115.png)
 
 L'analisi per d-Heap e Heap Binomiali è nel caso peggiore, mentre quella per gli Heap di Fibonacci è ammortizzata (per le operazioni *asteriscate*).
 
@@ -271,4 +271,4 @@ L'analisi per d-Heap e Heap Binomiali è nel caso peggiore, mentre quella per gl
 Per esempio, nel nostro caso:
 
 **Teorema**
-![[image-116.png]]
+![image-116](../../imm/image-116.png)
