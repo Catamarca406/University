@@ -1,5 +1,5 @@
 #Algoritmi 
-### Sommario pt1
+### Sommario 
 
 - Delimitazioni inferiori e superiori (di <span style="color:rgb(0, 176, 240)">algoritmi</span> e <span style="color:rgb(0, 176, 240)">programmi</span>)
 - Quanto velocemente si possono ordinare <span style="color:rgb(0, 176, 240)">n</span> elementi? 
@@ -141,7 +141,7 @@ Scorre <span style="color:rgb(0, 176, 240)">Y</span> da sinistra verso destra e,
 
 ![|686x249](../../imm/image-8.png)
 
-PseudoCodice 
+#### PseudoCodice 
 >[!example]
 >IntegerSort (X,k)
 >1. Sia Y un array di dimensione k
@@ -180,3 +180,98 @@ Contraddice il lower bound di Ω(<span style="color:rgb(0, 176, 240)">n</span> l
 No, perché l' IntegerSort non è un algoritmo basato su confroniti!
 
 ![641x240](../../imm/image-10.png)
+
+
+
+### Bucket Sort
+
+Per ordinare n record (strutture base con cui si scrivono tabelle) con chiavi intere in [1,k]
+
+- <span style="color:rgb(0, 176, 240)">Esempio</span>: ordinare <span style="color:rgb(0, 176, 240)">n</span> record con campi:
+	-nome, cognome, anno di nascita, matricola.... 
+
+<span style="color:rgb(0, 176, 240)">Input</span> del problema:
+- <span style="color:rgb(0, 176, 240)">n</span> record mantenuti in un array
+- ogni elemento dell'array è un record con: 
+	-campo chiave (rispetto al quale ordinare) 
+	-altri campi associati alla chiave (informazione satellite)
+
+#### Come operare
+- Si mantenie un array di liste, anziché di contatori, operando come per IntegerSort
+- La lista Y[i] conterrà gli elementi con chiave uguale a <span style="color:rgb(0, 176, 240)">i</span>
+- Successivamente si concatenano le liste 
+	Tempo O(<span style="color:rgb(0, 176, 240)">n</span>+<span style="color:rgb(0, 176, 240)">k</span>) come per <span style="color:rgb(0, 176, 240)">IntegerSort </span>
+
+
+![416x389](../../imm/image-13.png)
+
+Si opera come per l' IntegerSort, ad ogni chiave della lista di record corrisponde un'indice della lista Y[]. 
+Inserisco fino a terminare tutti i record. 
+
+Caso importante, <span style="color:rgb(0, 176, 240)">molteplicità di una chiave</span>:
+
+![573x314](../../imm/image-16.png)
+
+
+#### PseudoCodice
+>[!example]
+>BucketSort (X, k)
+>1. --Sia Y un array di dimensione k
+>2. --**for** i=1 **to** k **do** Y[i] = lista vuota    --*inizializzo*
+>3. --**for** i=1 **to** n **do**
+>4. ----appendi il record X[i] alla lista Y[chiave(X[i])]  -- *//preparo Y con pos=chiavi di X*
+>5. --**for** i=1 **to** k **do**
+>6. ----copia ordinatamente in X gli elementi della lista Y[i]
+
+#### Stabilità 
+- Un algoritmo è stabile se preserva l'ordine iniziale tra elementi con la stessa chiave
+- Il <span style="color:rgb(0, 176, 240)">BucketSort</span> è stabile se si appendendo gli elementi di <span style="color:rgb(0, 176, 240)">X</span> <span style="color:rgb(255, 0, 0)">in coda</span> alla opportuna lista Y[i]
+
+### RadixSort 
+
+- Ordina n interi con valori in [1,k]
+- Rappresentiamo gli elementi in base b, ed eseguiamo una serie di BucketSort
+- Partiamo dalla cifra meno significativa verso quella più significativa:
+	 -Ordiniamo per l'i-sima cifra con una passata di BucketSort 
+	 -L' i-sima cifra è la chiave, il numero informazione satellite
+	 -L' i-sima cifra è un intero in [0,b-1]
+
+
+![image-17](../../imm/image-17.png)
+
+
+#### Correttezza
+
+- Se <span style="color:rgb(0, 176, 240)">x</span> e <span style="color:rgb(0, 176, 240)">y</span> hanno una diversa <span style="color:rgb(0, 176, 240)">t</span>-esima cifra, la<span style="color:rgb(0, 176, 240)"> </span><span style="color:rgb(0, 176, 240)">t</span>-esima passata di <span style="color:rgb(0, 176, 240)">BucketSort</span> li ordina
+- Se <span style="color:rgb(0, 176, 240)">x</span> e <span style="color:rgb(0, 176, 240)">y</span> hanno la stessa t-esima cifra, la proprietà di stabilità del <span style="color:rgb(0, 176, 240)">BucketSort</span> li mantiene ordinati correttamente
+Dopo la <span style="color:rgb(0, 176, 240)">t</span>-esima passata di <span style="color:rgb(0, 176, 240)">BucketSort</span>, i numeri sono correttamente ordinati rispetto alle t cifre meno significative
+
+Esempio:    <span style="color:rgb(255, 255, 0)">2</span>397
+		   <span style="color:rgb(255, 255, 0)">4</span>368
+		   <span style="color:rgb(255, 255, 0)">5</span>924 
+	le cifre meno significative sono ordinate
+
+
+#### Tempo di correttezza
+
+- O($log_b$ k) passate di BucketSort
+  -# di cifre per rappresentare il valore massimo k in base b: O($log_b$ k)
+- Ciascuna passata richiede tempo O(n + b)
+	-in ogni passata la chiave è un intero in [0, b-1]
+
+	O( (n+b) ($log_b$ k) )
+
+Se b = Θ(n), si ha O(n $log_n$ k) = * O ( <span style="color:rgb(0, 176, 240)">n</span> ( log <span style="color:rgb(0, 176, 240)">k</span>/log <span style="color:rgb(0, 176, 240)">n</span>) )
+
+* $log_2$ <span style="color:rgb(0, 176, 240)">k</span> = $log_n$ <span style="color:rgb(0, 176, 240)">k</span> $\cdot$ $log_2$ <span style="color:rgb(0, 176, 240)">n</span>
+
+$\Rightarrow$ Tempo lineare se <span style="color:rgb(0, 176, 240)">k</span> = O($n^c$), <span style="color:rgb(0, 176, 240)">c</span> costante
+
+<span style="color:rgb(255, 0, 0)">Esempio:</span>
+
+- Si supponga di voler ordinare $10^6$ numeri da 32 bit
+- Come scelgo la base b ?
+- $10^6$ è compreso fra $2^{19}$ e $2^{20}$ 
+- Scegliendo b = $2^{16}$ si ha:
+	-sono sufficienti 2 passate di BucketSort
+    -ogni passata richiede tempo lineare 
