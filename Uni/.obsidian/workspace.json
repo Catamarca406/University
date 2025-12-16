@@ -4,21 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "6de257f45cf35545",
+        "id": "8b084af8491d436b",
         "type": "tabs",
         "children": [
           {
-            "id": "d967ee9b71097b3b",
+            "id": "6f27f48cfec8fd58",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "SecondoAnno/Algoritmi/Lezione 6.md",
+                "file": "SecondoAnno/Algoritmi/Lezione 10.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Lezione 6"
+              "title": "Lezione 10"
+            }
+          },
+          {
+            "id": "08f9c3118c5b7df6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "SecondoAnno/Algoritmi/Lezione 11.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Lezione 11"
             }
           }
         ]
@@ -87,6 +101,7 @@
       {
         "id": "54ac09f5b8567591",
         "type": "tabs",
+        "dimension": 38.55278766310795,
         "children": [
           {
             "id": "22adb645758b7679",
@@ -94,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "SecondoAnno/Algoritmi/Lezione 5.md",
+                "file": "SecondoAnno/Algoritmi/Lezione 9.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +119,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Riferimenti a Lezione 5"
+              "title": "Riferimenti a Lezione 9"
             }
           },
           {
@@ -113,12 +128,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "SecondoAnno/Algoritmi/Lezione 5.md",
+                "file": "SecondoAnno/Algoritmi/Lezione 9.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Collegamenti in uscita da Lezione 5"
+              "title": "Collegamenti in uscita da Lezione 9"
             }
           },
           {
@@ -142,15 +157,23 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "SecondoAnno/Algoritmi/Lezione 6.md",
+                "file": "SecondoAnno/Algoritmi/Lezione 10.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Struttura di Lezione 6"
+              "title": "Struttura di Lezione 10"
             }
-          },
+          }
+        ],
+        "currentTab": 3
+      },
+      {
+        "id": "d7001a58dde1d791",
+        "type": "tabs",
+        "dimension": 27.876631079478052,
+        "children": [
           {
             "id": "9066c93a50d64244",
             "type": "leaf",
@@ -161,15 +184,15 @@
               "title": "Calendar"
             }
           }
-        ],
-        "currentTab": 4
+        ]
       },
       {
         "id": "d2b606e704c49334",
         "type": "tabs",
+        "dimension": 33.570581257414,
         "children": [
           {
-            "id": "6a0ce279bc1e0c96",
+            "id": "93ce32e41d9d8c59",
             "type": "leaf",
             "state": {
               "type": "graph",
@@ -182,7 +205,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -195,25 +219,35 @@
       "bases:Create new base": false
     }
   },
-  "active": "d967ee9b71097b3b",
+  "active": "6f27f48cfec8fd58",
   "lastOpenFiles": [
-    "imm/image-10.png",
-    "imm/image-9.png",
-    "imm/image-8.png",
-    "imm/image-7.png",
-    "imm/image-6.png",
-    "imm/image-5.png",
-    "SecondoAnno/Algoritmi/Lezione2.md",
-    "SecondoAnno/Algoritmi/Lezione 6.md",
-    "imm/image-4.png",
+    "SecondoAnno/Algoritmi/Lezione 11.md",
     "SecondoAnno/Algoritmi/Lezione 4.md",
-    "PrimoAnno/Programmazione/Programmi C/Projects/README.md",
     "SecondoAnno/Algoritmi/Lezione 5.md",
-    "SecondoAnno/Algoritmi/Lezione3.md",
-    "imm/image-3.png",
-    "imm/image-2.png",
-    "imm/image-1.png",
-    "imm/image.png",
-    "PrimoAnno/Analisi1/Dim_Orale_Analisi.pdf"
+    "SecondoAnno/Algoritmi/Lezione 6.md",
+    "SecondoAnno/Algoritmi/Lezione 7.md",
+    "SecondoAnno/Algoritmi/Lezione 8.md",
+    "SecondoAnno/Algoritmi/Lezione 9.md",
+    "SecondoAnno/Algoritmi/Lezione 10.md",
+    "imm/image-137.png",
+    "imm/image-136.png",
+    "imm/image-135.png",
+    "imm/image-134.png",
+    "imm/image-133.png",
+    "imm/image-132.png",
+    "imm/image-131.png",
+    "imm/image-130.png",
+    "imm/image-129.png",
+    "imm/image-128.png",
+    "SecondoAnno/Avalanche/Introduzione.md",
+    "SecondoAnno/Algoritmi/Lezione 3.md",
+    "SecondoAnno/Algoritmi/Lezione 2.md",
+    "SecondoAnno/Avalanche/Secondo workshop.md",
+    "SecondoAnno/Avalanche",
+    "SecondoAnno/Sistemi Operativi/Elementi di programmazione nei s.o..md",
+    "SecondoAnno/Sistemi Operativi/Creazione di processi.md",
+    "PrimoAnno/Analisi1/Dim_Orale_Analisi.pdf",
+    "SecondoAnno/Sistemi Operativi/Bash.md",
+    "PrimoAnno/Programmazione/Programmi C/Projects/README.md"
   ]
 }
