@@ -19,12 +19,12 @@ e così Königsberg venne rappresentata con un insieme di **4 punti** (uno per c
 
 Un **grafo G = (V,E)** consiste in:
 - un insieme **V** di vertici (o *nodi*).
-- un insieme **E** di coppie (non ordinate) di vertici, chiamati **archi**.
+- un insieme **E** di coppie (non ordinate) di vertici, chiamati **archi(u,v)**.
 
 #### Esempio
 Grafo di Eulero associato alla città di Königsberg:
 **V = {A,B,C,D}**
-**E = { (A,B),(A,B),(A,D), (B,C), (B,C), (B,D), (B,D), (C,D) }**
+**E = { (A,B),(A,B),(A,D), (B,C), (B,C), (B,D), (C,D) }**
 
 ![373x282](../../imm/image-119.png)
 
