@@ -9,7 +9,7 @@
 
 
 Tecnica del dividi et impera nel s.o.
-	visto che everything it's a file allora tutto si può incastrare con tutto
+	visto che everything is a file allora tutto si può incastrare con tutto
 
 
 Pipe  = pseudofile, mi da la possibilità di scrivere (in coda, ha byte che si accodano) e leggere (con fifo) ha un buffer
