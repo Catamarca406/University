@@ -9,17 +9,17 @@
 Sia G = (V,E,w) un grafo *orientato* o *non orientato* con pesi w **reali** sugli archi.
 Il **costo** o **lunghezza** di un cammino $\pi$ = < $v_0$ , $v_1$ , $v_2$ , .... , $v_k$ > è : 
 
-![[image-163.png]]
+![image-163](../../imm/image-163.png)
 
 Un **cammino minimo** tra una coppia di vertici x e y è un cammino avente **costo minore o uguale** a quello di ogni altro cammino tra gli stessi vertici.
 
 NOTA: il cammino minimo non è necessariamente unico.
 
-![[Screenshot From 2025-12-18 13-50-38.gif]]
+![Screenshot From 2025-12-18 13-50-38](../../imm/Screenshot%20From%202025-12-18%2013-50-38.gif)
 
 
 **Problema di Maps:**
-![[image-164.png]]
+![image-164](../../imm/image-164.png)
 
 
 ### Esiste sempre un cammino minimo fra due nodi?
@@ -30,7 +30,7 @@ NOTA: il cammino minimo non è necessariamente unico.
 
 **Oss:** se **G** non contiene cicli negativi, esistono cammini minimi che sono cammini *semplici (non contiene nodi ripetuti)*.
 
-![[image-165.png|554x240]]
+![554x240](../../imm/image-165.png)
 
 Passando per il ciclo con costo negativo *n-volte*, arriverò sicuramente ad ottenere un cammino negativo -> -∞. 
 
@@ -40,20 +40,20 @@ Ogni **sottocammino** di un cammino minimo è un cammino minimo.
 
 <span style="color:rgb(0, 176, 240)">dim:</span> tecnica *cut & paste*.
 
-![[image-166.png]]
+![image-166](../../imm/image-166.png)
 
 #### **Disuguaglianza triangolare:**
 
 per ogni u, v, x $\in$ V, vale:
 	d(u,v) $\leq$ d(u,x) + d(x,v)
 
-![[image-167.png|519x200]]
+![519x200](../../imm/image-167.png)
 
 Il **cammino** da *u* a *v* che passa per *x* è un cammino nel grafo e quindi il suo costo è almeno il costo del cammino minimo da *u* a *v*.
 
 #### Cammini minimi a singola sorgente
 
-![[image-168.png|578x361]]
+![578x361](../../imm/image-168.png)
 
 Albero dei cammini minimi, partendo da Roma 
 
@@ -69,11 +69,11 @@ T è un albero dei cammini minimi con sorgente s di un grafo G = (V,E,w) se:
 - T è un albero radicato in s
 - Per ogni v $\in$ V, vale:                                                                                                                           $d_T$(s,v) = $d_G$(s,v)
 
-![[image-169.png|222x285]]
+![222x285](../../imm/image-169.png)
 
 
 
-![[image-170.png]]
+![image-170](../../imm/image-170.png)
 
 
 ### Algoritmo di Dijkstra
@@ -83,7 +83,7 @@ Assunzione: tutti gli archi hanno peso non negativo, ovvero ogni arco(u,v) del g
 <span style="color:rgb(255, 0, 0)">Idea</span>:
 Pompare l'acqua nella sorgente
 
-![[Screenshot From 2025-12-19 13-53-53.gif|380x308]]
+![380x308](../../imm/Screenshot%20From%202025-12-19%2013-53-53.gif)
 
 - Archi come <span style="color:rgb(0, 176, 240)">tubi</span> 
 - Peso degli archi come <span style="color:rgb(0, 176, 240)">lunghezza</span>
@@ -100,7 +100,7 @@ Pompare l'acqua nella sorgente
 4. Aggiorna le stime guardando i nodi adiacenti a *u*.
 
 
-  ![[image-171.png|411x333]]
+  ![411x333](../../imm/image-171.png)
   
 I nodi da aggiungere progressivamente a X (e quindi a T) sono mantenuti in una **coda di priorità**, associati ad **un unico arco** (arco arancione) che li connette.
 
@@ -112,15 +112,15 @@ Se y è in coda con arco **(x,y)** associato, e se dopo aver raggiunto <span sty
 $D_{SU}$ + w(x,y) < $D_{SX}$ + w(x,y), allora *rimpiazziamo* **(x,y)** con <span style="color:rgb(112, 48, 160)">(u,y)</span>, ed aggiorniamo $D_{SY}$.
   
   
-![[image-172.png|300x406]]
+![300x406](../../imm/image-172.png)
 
 
 #### **Pseudocodice:**
-![[image-173.png|439x400]]
+![439x400](../../imm/image-173.png)
 
 **Nota**: $\hat T$  è un albero che contiene tutti i nodi in X *più* i nodi correntemente contenuti nella coda di priorità (nodi arancioni), è composto cioè dagli archi di T (albero dei cammini minimi ristretto ai nodi in X) più gli archi arancioni (potenziali archi da aggiungere a T).
 
-![[Screenshot From 2025-12-19 15-54-44.gif|359x298]]
+![359x298](../../imm/Screenshot%20From%202025-12-19%2015-54-44.gif)
 
 
 #### **Correttezza:**
@@ -136,7 +136,7 @@ Sia (u,v) l'arco aggiunto all'albero corrente (arco arancione)
 
 (x,y): primo arco del cammino t.c. x $\in$ T e y $\notin$ T
 
-![[Screenshot From 2025-12-19 16-17-02.gif]]
+![Screenshot From 2025-12-19 16-17-02](../../imm/Screenshot%20From%202025-12-19%2016-17-02.gif)
 
 
 $\Rightarrow$ $D_{sy}$ $\leq$ d(s,x) + w(x,y) < d(s,u) + w(u,v)
@@ -153,7 +153,7 @@ Quanto costano le operazioni sulla coda con priorità?
 
 Supponendo che il grafo **G** sia rappresentato tramite liste di adiacenza, e supponendo che tutti i nodi siano connessi ad *s*, avremo **n insert**, <span style="color:rgb(255, 192, 0)">n deleteMin</span> e al più <span style="color:rgb(0, 176, 240)">m decreaseKey</span> nella coda di priorità, al costo di: 
 
-![[image-174.png|660x255]]
+![660x255](../../imm/image-174.png)
 
 - **n $\cdot$ O(1)** + <span style="color:rgb(255, 192, 0)">n</span> $\cdot$ <span style="color:rgb(255, 192, 0)">O(n)</span> + <span style="color:rgb(0, 176, 240)">O(m)</span> $\cdot$ <span style="color:rgb(0, 176, 240)">O(1)</span> = <span style="color:rgb(255, 192, 0)">O(</span>$n^2$<span style="color:rgb(255, 192, 0)">)</span> con array non ordinati
 - **n $\cdot$ O(n)**+ <span style="color:rgb(255, 192, 0)">n</span> $\cdot$ <span style="color:rgb(255, 192, 0)">O(1)</span> + <span style="color:rgb(0, 176, 240)">O(m)</span> $\cdot$ <span style="color:rgb(0, 176, 240)">O(n) </span>= <span style="color:rgb(0, 176, 240)">O(m</span> $\cdot$ <span style="color:rgb(0, 176, 240)">n)</span> con array ordinati
@@ -162,7 +162,7 @@ Supponendo che il grafo **G** sia rappresentato tramite liste di adiacenza, e su
 
 
 
-![[image-175.png]]
+![image-175](../../imm/image-175.png)
 
 - **n $\cdot$ O(log n)** + <span style="color:rgb(255, 192, 0)">n</span> $\cdot$<span style="color:rgb(255, 192, 0)"> O(log n) </span>+ <span style="color:rgb(0, 176, 240)">O(m)</span> $\cdot$ <span style="color:rgb(0, 176, 240)">O(log n) </span>= <span style="color:rgb(0, 176, 240)">O(m</span> $\cdot$ <span style="color:rgb(0, 176, 240)">log n)</span> utilizzando heap binari o binomiali
 - **n $\cdot$ O(1)** + <span style="color:rgb(255, 192, 0)">n</span> $\cdot$ <span style="color:rgb(255, 192, 0)">O(log n)*</span> + <span style="color:rgb(0, 176, 240)">O(m)</span> $\cdot$ <span style="color:rgb(0, 176, 240)">O(1)*</span> = O(<span style="color:rgb(0, 176, 240)">m</span> +n $\cdot$ log n) utilizzando heap di Fibonacci

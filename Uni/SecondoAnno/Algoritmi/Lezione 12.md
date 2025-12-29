@@ -59,11 +59,11 @@ Un grafo diretto aciclico (DAG) è un grafo diretto G che non contiene cicli (di
 **Definizione:**
 Un ordinamento topologico di un grafo diretto G = (V,E) è una funzione biettiva $\sigma$ : V -> {1,2,...,n} tale che per ogni arco (u,v) $\in$ E, $\sigma$(u) < $\sigma$(v)
 
-![[image-150.png|604x212]]
+![604x212](../../imm/image-150.png)
 
 #### Reti delle dipendenze
 
-![[image-151.png|298x205]]
+![298x205](../../imm/image-151.png)
 
 <span style="color:rgb(0, 176, 240)">nodi:</span> compiti da svolgere
 <span style="color:rgb(0, 176, 240)">arco (u,v): </span>u deve essere eseguito prima di v
@@ -71,7 +71,7 @@ Un ordinamento topologico di un grafo diretto G = (V,E) è una funzione biettiva
 <span style="color:rgb(0, 176, 240)">Problema:</span>
 Trovare un ordine in cui eseguire i compiti in modo da rispettare le dipendenze.
 
-![[image-152.png|580x189]]
+![580x189](../../imm/image-152.png)
 
 #### Dag che ammettono ordine topologico
 
@@ -90,36 +90,36 @@ allora $\sigma$($v_0$) < $\sigma$($v_1$) < ... < $\sigma$($v_{k-1}$) < $\sigma$(
 <span style="color:rgb(255, 0, 0)">Algoritmo:</span> 
 Fare una visita DFS e restituisci i nodi in ordine decrescente rispetto ai tempi di fine visita post(v).
 
-![[image-153.png]]
+![image-153](../../imm/image-153.png)
 
 **Complessità temporale:**
 Se G è rappresentato con *liste di adiacenza* $\Theta$(n +m)
 
 **Esempio:**
-![[image-154.png]]
+![image-154](../../imm/image-154.png)
 
 
 **Correttezza**
 Per ogni coppia di nodi *u* e *v*, gli intervalli [pre(u),post(u)] e [pre(v),post(v)]
 o sono disgiunti o l'uno è contenuto nell'altro
 
-![[image-155.png]]
+![image-155](../../imm/image-155.png)
 
 Non ci possono essere archi all'indietro
 
 Un **algoritmo alternativo**
 
-![[image-156.png]]
+![image-156](../../imm/image-156.png)
 
 
-![[Screenshot From 2025-12-17 16-43-11.gif]]
+![Screenshot From 2025-12-17 16-43-11](../../imm/Screenshot%20From%202025-12-17%2016-43-11.gif)
 
 
 #### Componenti fortemente connesse 
 
 Una <span style="color:rgb(0, 176, 240)">componente fortemente connessa</span> di un grafo <span style="color:rgb(0, 176, 240)">G = (V,E)</span> è un insieme <span style="color:rgb(255, 0, 0)">massimale</span> di vertici <span style="color:rgb(0, 176, 240)">C</span> $\subseteq$ <span style="color:rgb(0, 176, 240)">V</span> tale che per ogni coppia di nodi <span style="color:rgb(0, 176, 240)">u</span> e <span style="color:rgb(0, 176, 240)">v</span> in <span style="color:rgb(0, 176, 240)">C</span>, u è raggiungibile da <span style="color:rgb(0, 176, 240)">v</span> e <span style="color:rgb(0, 176, 240)">v</span> è raggiungibile da<span style="color:rgb(0, 176, 240)"> </span><span style="color:rgb(0, 176, 240)">u</span>. 
 
-![[image-157.png]]
+![image-157](../../imm/image-157.png)
 
 <span style="color:rgb(255, 0, 0)">Massimale</span>: se si aggiunge un qualsiasi vertice a <span style="color:rgb(0, 176, 240)">C</span> la proprietà non è più vera.
 
@@ -130,7 +130,7 @@ E' sempre un <span style="color:rgb(0, 176, 240)">DAG</span>
 
 #### Come calcolare le componenti fortemente connesse di un grafo diretto
 
-![[image-157.png]]
+![image-157](../../imm/image-157.png)
 
 <span style="color:rgb(255, 0, 0)">Proprietà 1</span>: Se si esegue la procedura *visitaDFSricorsiva* a partire da un nodo <span style="color:rgb(0, 176, 240)">u</span> la procedura termina dopo che tutti i nodi raggiungibili da <span style="color:rgb(0, 176, 240)">u</span> sono stati visitati.
 
@@ -145,7 +145,7 @@ E' sempre un <span style="color:rgb(0, 176, 240)">DAG</span>
 
 **Come trovo una componente pozzo?**
 
-![[image-159.png]]
+![image-159](../../imm/image-159.png)
 
 <span style="color:rgb(255, 0, 0)">Proprietà 2</span>: Se <span style="color:rgb(0, 176, 240)">C</span> e <span style="color:rgb(0, 176, 240)">C' </span>sono due componenti e c'è un arco da un nodo in C verso uno in <span style="color:rgb(0, 176, 240)">C'</span>, allora il più grande valore post() in <span style="color:rgb(0, 176, 240)">C</span> è maggiore del più alto valore di post() di <span style="color:rgb(0, 176, 240)">C'</span>. 
 
@@ -153,20 +153,20 @@ E' sempre un <span style="color:rgb(0, 176, 240)">DAG</span>
 Se visita prima <span style="color:rgb(0, 176, 240)">C</span>, allora si ferma dopo che ha raggiunto tutti i nodi di <span style="color:rgb(0, 176, 240)">C</span> e <span style="color:rgb(0, 176, 240)">C'</span> e termina su un nodo di <span style="color:rgb(0, 176, 240)">C</span>.
 
 $\Rightarrow$ <span style="color:rgb(255, 0, 0)">Proprietà 3</span> : il nodo che riceve da una visita DFS il valore più grande di post() appartiene a una componente sorgente.
-![[image-160.png]]
+![image-160](../../imm/image-160.png)
 
 Avevamo bisogno di una componente pozzo?
 
 <span style="color:rgb(255, 0, 0)">idea</span>: invertiamo gli archi!
 
-![[image-161.png]]
+![image-161](../../imm/image-161.png)
 
 
 **Pseudocodice:**
-![[image-162.png]]
+![image-162](../../imm/image-162.png)
 
 **Complessità temporale:** 
 Se G è rappresentato con liste di adiacenza -> $\Theta$(n+m)
 
 
-![[Screenshot From 2025-12-18 10-53-57.gif]]
+![Screenshot From 2025-12-18 10-53-57](../../imm/Screenshot%20From%202025-12-18%2010-53-57.gif)
