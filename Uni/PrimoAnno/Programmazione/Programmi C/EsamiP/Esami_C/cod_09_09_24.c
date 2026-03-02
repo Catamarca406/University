@@ -61,4 +61,6 @@ int main(){
 
     printf("%s",output);
     printf("\n");
+
+    free(output);
 }

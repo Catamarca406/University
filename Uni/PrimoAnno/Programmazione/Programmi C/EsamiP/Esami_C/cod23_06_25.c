@@ -50,7 +50,7 @@ int main(){
     }
     printf("]\n");
     
-
+    free(a);
 }
    
     

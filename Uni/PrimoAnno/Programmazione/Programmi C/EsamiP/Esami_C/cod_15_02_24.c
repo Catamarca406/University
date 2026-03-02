@@ -62,5 +62,6 @@ int main()
         printf("%c",a[i]);
     }
     printf("\n");
-
+    
+    free(get_format(a));
 }

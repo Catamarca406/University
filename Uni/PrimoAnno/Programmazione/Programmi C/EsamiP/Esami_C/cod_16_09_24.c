@@ -82,4 +82,6 @@ int main()
     int lenA = sizeof(a) / sizeof(float);
     int_array max_pos = pos_max(a, lenA);
     int_array_print(&max_pos);
+
+    
 }

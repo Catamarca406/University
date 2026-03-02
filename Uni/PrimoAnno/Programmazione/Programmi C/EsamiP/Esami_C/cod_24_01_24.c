@@ -60,6 +60,11 @@ int main(){
         printf("%c",c[i]);
     }
     printf("\n");
+
+
+    free(a);
+    free(b);
+    free(c);
 }
 
 //costo Temporale: O(n)

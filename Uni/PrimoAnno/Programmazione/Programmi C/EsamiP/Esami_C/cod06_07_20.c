@@ -45,7 +45,7 @@ int main()
 {
     char esempio[] = "ddabeceffgfh";
     rimuovi_non_ordinati(esempio);
-
+    
 
     //Costo temporale: O(n)
     //Costo spaziale: O(n)

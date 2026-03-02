@@ -58,4 +58,6 @@ int main()
     new_string=prefix(string,n);
     printf("%s",new_string);
     printf("\n");
+
+    free(new_string);
 }

@@ -7,5 +7,5 @@ name1=[]
 name2=[]
 result=[]
 
-for i in range(lenX):
+
    

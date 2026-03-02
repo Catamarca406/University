@@ -40,4 +40,6 @@ int main()
     b = prefix(a, n);
 
     printf("%s\n", b);
+
+    free(b);
 }

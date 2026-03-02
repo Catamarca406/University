@@ -4,7 +4,7 @@ def mode(a):
     seen=set()
 
     if a == []:
-        return None
+        return []
      
     for elem in a:
         if elem not in d:
@@ -16,7 +16,7 @@ def mode(a):
 
     l=[]
     for elem in a:
-        if (d[elem]==abs_max) and (d[elem]not in seen):
+        if (d[elem]==abs_max) and (elem not in seen):
             seen.add(elem)
             l.append(elem)
     

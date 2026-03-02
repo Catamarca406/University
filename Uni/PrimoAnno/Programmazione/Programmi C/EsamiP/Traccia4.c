@@ -62,5 +62,6 @@ int main(){
         printf("%c",b[i]);          //stampo i valori della nuova stringa
     }
     printf("]\n");
-
+    
+    free(b);
 }

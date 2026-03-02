@@ -1,21 +1,22 @@
-'''
-Si scriva una funzione denominata deep_mean che prenda in input una lista e ritorni la media dei
-numeri in essa contenuti
-'''
-
 def deep_mean(a):
+
+    k=0
     sum=0
     for i in range(len(a)):
-        sum+=a[i]
+        if type(a[i]) == int or type(a[i]) == float:
+            sum+=a[i]
+            k+=1
+        elif type(a[i]) == list:
+            sum+=deep_mean(a[i])[0]
+            k+=deep_mean(a[i])[1]
+    
 
-    avg=sum/len(a)
-    return avg
+    return (sum,k)
 
 
-a=[10,15,5,4,6,8,1]
-avg=0
-avg=deep_mean(a)
-print("average:",avg)
+a=[10,3,5,"a",[3,5,1]]
+print(deep_mean(a)[0]/deep_mean(a)[1])
 
-#Costo temporale: O(n)
-#Costo spaziale: O(n)
+#Costo spaziale:O(1)
+#Costo temporale: O(n*s)
+

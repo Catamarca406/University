@@ -5,33 +5,36 @@ dal primo float; la seconda riga mostri il secondo int, la seconda str e il
 secondo float… e così via fino alla k-esima riga che elenchi l’ultimo int,
 l'ultima str e l'ultimo float."""
 
-a=[30.5,"int",5,21.2,10,"prv"]
-
-int_list=[]
-float_list=[]
-str_list=[]
-
-
-for elem in a:
-    if type(elem) is int:
-        int_list.append(elem)
-    elif type(elem) is float:
-        float_list.append(elem)
-    elif type(elem) is str:
-        str_list.append(elem)
-
-
-rows_list=[]
-
-
-for pos in range(len(int_list)):
-    rows_list.append(int_list[pos])
-    rows_list.append(float_list[pos])
-    rows_list.append(str_list[pos])
+def ord_types(a):
     
+    ord_ints=[]
+    ord_floats=[]
+    ord_strs=[]
 
-print(rows_list)
+    for elem in a:
+        if type(elem) == int:
+            ord_ints.append(elem)
+        if type(elem) == float:
+            ord_floats.append(elem)
+        if type(elem) == str:
+            ord_strs.append(elem)
+
+    ord_tps=[]
+    l=[]
+
+    for i in range(len(ord_ints)):
+
+        l.append(ord_ints[i])
+        l.append(ord_strs[i])
+        l.append(ord_floats[i])
+        ord_tps.append(l)
+        print(f'i seguenti elemnti sono : {l[0]}, {l[1]}, {l[2]}')
+        l = []
+
+    return ord_tps
 
 
-#Costo temporale: O(n)
-#Costo spaziale: O(n)
+
+
+a=[2,3.3,"diario",5.6,7,"sud0",1.3,"prova","int",5]
+print(ord_types(a))

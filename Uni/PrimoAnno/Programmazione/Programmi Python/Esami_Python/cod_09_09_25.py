@@ -1,20 +1,10 @@
-
 def longest_prefix_with_words(a,n):
+    d={}
 
-    count_p=0
-    prl=""
-
-    for parola in a:
-        if parola!=' ':
-           prl=parola
-           print(prl)
-        
-
-    
-
-
-
+    for i in range(len(a)):
+        if i+1 != ' ':
+            
+   
 a="hello world everyone"
-n=10
-
+n=7
 print(longest_prefix_with_words(a,n))

@@ -28,4 +28,6 @@ int main(){
     char* output;
     output=tab2spaces(a,2);
     printf("%s",output);
+    free(output);
+    free(a);
 }
