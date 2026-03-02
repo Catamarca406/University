@@ -46,7 +46,7 @@ Dato un problema <span style="color:rgb(0, 176, 240)">P</span> con complessità 
 Abbiamo un gap di log n tra upper bound e lower bound!
 
 
-![687x200](../../imm/Pastedimage20251102233059.png)
+![687x200](Pastedimage20251102233059.png)
 
 Notare: Tutti gli algoritmi citati prima sono algoritmi di ordinamento per confronto.
 
@@ -76,7 +76,7 @@ Albero di decisione - Descrive i confronti che l'algoritmo esegue quando opera s
 - Nodo foglia: 
 	-modella una risposta (output) dell'algoritmo: <span style="color:rgb(0, 176, 240)">permutazione degli elementi</span> 
 
-![693x264](../../imm/Pastedimage20251103145356.png)
+![693x264](Pastedimage20251103145356.png)
 
 I numeri segnati nell'albero corrispondono ai pedici dell'input.
 **Osservazioni:**
@@ -106,7 +106,7 @@ v ha almeno un figlio u che è radice di un (sotto)albero che ha almeno k/2 fogl
 T ha altezza almeno 
 1 + $log_2 k/2$ = 1+$log_2 k$ - $log_2 2$ = $log_2 k$
 
-![472x409](../../imm/image-4.png)
+![472x409](image-4.png)
 
 
 #### Il lower bound Ω(n log n) 
@@ -114,7 +114,7 @@ T ha altezza almeno
 - L'altezza h dell'albero di decisione è almeno $log_2$ (n!) 
 - Formula di Stirling: n! $\approx$ $(2\pi n)^{1/2} \cdot (n/e)^n$  
 
-![652x320](../../imm/image-5.png)
+![652x320](image-5.png)
 
 
 Può un algoritmo basato su n confronti ordinare <span style="color:rgb(255, 0, 0)">n</span> interi piccoli, compresi fra 1 e k= O(<span style="color:rgb(255, 0, 0)">n</span>), in (asintoticamente) meno di <span style="color:rgb(255, 0, 0)">n</span><span style="color:rgb(255, 0, 0)"> </span>log <span style="color:rgb(255, 0, 0)">n</span> ?
@@ -122,24 +122,24 @@ Può un algoritmo basato su n confronti ordinare <span style="color:rgb(255, 0, 
 .....no la dimostrazione funziona anche sotto questa ipotersi!
 La grandezza non cambia il modus operandi dell'albero decisionale
 
-
-### Integer Sort: fase 1
+### Integer Sort
+#### Integer Sort: fase 1
 
 Per ordinare <span style="color:rgb(0, 176, 240)">n</span> interi con valori in [1,  k] oppure [0 , k]
 
 Mantiene un array <span style="color:rgb(0, 176, 240)">Y</span> di<span style="color:rgb(0, 176, 240)"> </span><span style="color:rgb(0, 176, 240)">k</span> contatori tale che  <span style="color:rgb(0, 176, 240)">Y</span>[x] = numero di volte che il valore <span style="color:rgb(0, 176, 240)">x</span> compare in <span style="color:rgb(0, 176, 240)">X</span>.
 
-![|682x247](../../imm/image-6.png)
+![|682x247](image-6.png)
 
 Con il vettore X originale conto il numero di elementi in esso incrementando Y[x] di 1 ogni volta che ne trovo uno.
 
 Se X[i] = n  $\Rightarrow$ Y[X[i]] ++
 
-### Integer Sort: fase 2
+#### Integer Sort: fase 2
 
 Scorre <span style="color:rgb(0, 176, 240)">Y</span> da sinistra verso destra e, se <span style="color:rgb(0, 176, 240)">Y</span>[x] = <span style="color:rgb(0, 176, 240)">k</span>, scrive in <span style="color:rgb(0, 176, 240)">X</span> il valore <span style="color:rgb(0, 176, 240)">x</span> per <span style="color:rgb(0, 176, 240)">k</span> volte.
 
-![|686x249](../../imm/image-8.png)
+![|686x249](image-8.png)
 
 #### PseudoCodice 
 >[!example]
@@ -164,10 +164,10 @@ Nelle righe 6. / 7. / 8. / 9. ricerco gli elementi del vettore<span style="color
 Per un i fissato il # volte eseguite è al più 1 + Y[i] , $\Rightarrow$ O(<span style="color:rgb(0, 176, 240)">k</span> + <span style="color:rgb(0, 176, 240)">n</span>)
 
 
-![569x158](../../imm/image-9.png)
+![569x158](image-9.png)
 
 
-### IntegerSort: analisi
+#### IntegerSort: analisi
 
 - Tempo O(1) + O(<span style="color:rgb(0, 176, 240)">k</span>) = O(<span style="color:rgb(0, 176, 240)">k</span>) per inizializzare <span style="color:rgb(0, 176, 240)">Y</span> a 0.
 - Tempo O(1) + O(<span style="color:rgb(0, 176, 240)">n</span>) = O(<span style="color:rgb(0, 176, 240)">n</span>) per calcolare i valori dei contatori.
@@ -179,7 +179,7 @@ Tempo lineare se k=O(<span style="color:rgb(0, 176, 240)">n</span>)
 Contraddice il lower bound di Ω(<span style="color:rgb(0, 176, 240)">n</span> log <span style="color:rgb(0, 176, 240)">n</span>) ?
 No, perché l' IntegerSort non è un algoritmo basato su confroniti!
 
-![641x240](../../imm/image-10.png)
+![641x240](image-10.png)
 
 
 
@@ -203,14 +203,14 @@ Per ordinare n record (strutture base con cui si scrivono tabelle) con chiavi in
 	Tempo O(<span style="color:rgb(0, 176, 240)">n</span>+<span style="color:rgb(0, 176, 240)">k</span>) come per <span style="color:rgb(0, 176, 240)">IntegerSort </span>
 
 
-![416x389](../../imm/image-13.png)
+![416x389](image-13.png)
 
 Si opera come per l' IntegerSort, ad ogni chiave della lista di record corrisponde un'indice della lista Y[]. 
 Inserisco fino a terminare tutti i record. 
 
 Caso importante, <span style="color:rgb(0, 176, 240)">molteplicità di una chiave</span>:
 
-![573x314](../../imm/image-16.png)
+![573x314](image-16.png)
 
 
 #### PseudoCodice
@@ -237,7 +237,7 @@ Caso importante, <span style="color:rgb(0, 176, 240)">molteplicità di una chiav
 	 -L' i-sima cifra è un intero in [0,b-1]
 
 
-![image-17](../../imm/image-17.png)
+![image-17](image-17.png)
 
 
 #### Correttezza

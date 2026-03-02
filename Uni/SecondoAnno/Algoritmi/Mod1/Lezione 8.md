@@ -1,7 +1,7 @@
 #Algoritmi 
 ù# Il problema del dizionario
 
-![670x252](../../imm/image-50.png)
+![670x252](image-50.png)
 
 
 ### Come implementare efficientemente un dizionario?
@@ -28,7 +28,7 @@ Per ogni nodo v vale che:
 
 #### Esempi
 
-![670x291](../../imm/image-51.png)
+![670x291](image-51.png)
 
 Per calcolare il massimo e il minimo:
 - Max = ultimo nodo dx del sottoalbero dx
@@ -36,7 +36,7 @@ Per calcolare il massimo e il minimo:
 
 Per vedere in modo crescente gli elementi dell'albero bisogna visitarlo con una BFS in ordine simmetrico
 
-![652x363](../../imm/image-52.png)
+![652x363](image-52.png)
 
 Ordine 2 3 4 6 7 9 13 15 17 18 20
 
@@ -50,11 +50,11 @@ Vogliamo mostrare che la visita in ordine simmetrico restituisce la sequenza ord
 Per induzione sull'altezza dell'ABR: h=1
 (mostriamolo senza perdita di generalità quando l'albero è completo).
 
-![665x324](../../imm/image-53.png)
+![665x324](image-53.png)
 
 h = generico (ipotizzo che la procedura sia corretta per altezza <h)
 
-![670x357](../../imm/image-54.png)
+![670x357](image-54.png)
 
 
 
@@ -64,7 +64,7 @@ h = generico (ipotizzo che la procedura sia corretta per altezza <h)
 Search(chiave k) -> elem
 Traccia un cammino nell'albero partendo dalla radice: su ogni nodo, usa la proprietà di ricerca per decidere se proseguire nel sottoalbero sinistro o destro.
 
-![671x211](../../imm/image-55.png)
+![671x211](image-55.png)
 
 
 ### Insert 
@@ -76,7 +76,7 @@ Insert(elem e, chiave k)
 2. Cerca la chiave k nell'albero, identificando così il nodo v che diventerà padre di u.
 3. Appende u come figlio sinistro/destro di v in modo che sia mantenuta la proprietà di ricerca.
 
-![673x357](../../imm/image-57.png)
+![673x357](image-57.png)
 
 *Correttezza*:
 Se seguo questo schema l'elemento *e* viene posizionato nella posizione giusta.
@@ -95,11 +95,11 @@ Per questo è utile implementare delle operazioni ausiliari:
 
 #### Ricerca del massimo / minimo
 
-![673x205](../../imm/image-58.png)
+![673x205](image-58.png)
 
 *Nota*: è possibile definire una procedura *min (nodo u)* in maniera del tutto analoga.
 
-![629x369](../../imm/image-59.png)
+![629x369](image-59.png)
 
 
 #### Predecessore e Successore
@@ -108,14 +108,14 @@ Per questo è utile implementare delle operazioni ausiliari:
 - Come trovo il predecessore/successore di un nodo in un BST?
 
 
-![654x155](../../imm/image-60.png)
+![654x155](image-60.png)
 
-![653x317](../../imm/image-61.png)
+![653x317](image-61.png)
 
 
 Nota: la ricerca del *successore* di un nodo è simmetrica
 
-![577x396](../../imm/image-62.png)
+![577x396](image-62.png)
 
 ### Delete
 
@@ -123,12 +123,12 @@ Delete(elem e)
 Sia *u* il nodo contenente l'elemento "*e*" da cancellare:
 1. u è una foglia: rimuovila
 2. u ha un solo figlio:
-	![423x237](../../imm/image-63.png)
+	![423x237](image-63.png)
 	Basta traslare *w* al posto di *u*, se *u* ha un **solo figlio** -> Costo Costante
 
 3. *u* ha due figli: sostituiscilo con il predecessore (o successore) (v) e rimuovi fisicamente il predecessore (o successore) (che ha al più un figlio).
 
-![image-64](../../imm/image-64.png)
+![image-64](image-64.png)
 
 - Nella 3. prelevo il massimo fra i nodi minori di *u*: *w* , lo sostituisco con con la radice, mantenendo così la proprietà del BST (nodi sx $\leq$  della radice, nodi dx >radice). Al posto di *w* riattacco i suoi figli.
 
@@ -137,11 +137,11 @@ Sia *u* il nodo contenente l'elemento "*e*" da cancellare:
 
 - Tutte le operazioni hanno costo O(h), dove h è l'altezza dell'albero.
 
-![532x288](../../imm/image-65.png)
+![532x288](image-65.png)
 
 
 - O(n) nel caso peggiore (alberi molo sbilanciati e profondi).
-![493x360](../../imm/image-66.png)
+![493x360](image-66.png)
 
 
 
@@ -158,11 +158,11 @@ Generalmente $\beta (v)$ mantenuto come informazione addizionale nel record rela
 
 Il seguente albero è un AVL
 
-![|551x299](../../imm/image-67.png)
+![|551x299](image-67.png)
 
 *Il seguente albero NON è un AVL*
 
-![528x396](../../imm/image-68.png)
+![528x396](image-68.png)
 
 Il fattore di bilanciamento = $h_{sx} -h_{dx}$ , per convenzione l'altezza di albero vuoto è pari a -1. 
 Questo albero non è un AVL perchè ad ogni livello non si decrementa mai, per via dei rami vuoti a dx. Quindi si arriverà alla radice con valori positivi $\geq$ 1.
@@ -170,7 +170,7 @@ Questo albero non è un AVL perchè ad ogni livello non si decrementa mai, per v
 
 *Il seguente albero è un AVL*
 
-![589x325](../../imm/image-69.png)
+![589x325](image-69.png)
 
  Viene rispettata la proprietà sui fattori di bilanciamento.
 
@@ -188,7 +188,7 @@ minimizzare # nodi fissata l'altezza $\equiv$  massimizzare altezza fissato # no
 
 #### Come è fatto un albero di Fibonacci di altezza 2?
 
-![image-70](../../imm/image-70.png)
+![image-70](image-70.png)
 
 *Infatti*: se togliamo ancora un nodo, o diventa sbilanciato, o cambia la sua altezza
 *Nota*: ogni nodo (non foglia) ha fattore di bilanciamento pari (in valore assoluto) a 1.
@@ -198,16 +198,16 @@ minimizzare # nodi fissata l'altezza $\equiv$  massimizzare altezza fissato # no
 $T_{i}$: albero di Fibonacci di altezza i
 	(albero AVL di altezza i con il minimo numero di nodi)
 	
-![image-71](../../imm/image-71.png)
+![image-71](image-71.png)
 
 *Nota che*: se a $T_{i}$ tolgo un nodo, o diventa sbilanciato, o cambia la sua altezza
 *Inoltre*: ogni nodo (non foglia) ha fattore di bilanciamento pari (in valore assoluto) a 1.
 
 
-![image-72](../../imm/image-72.png)
+![image-72](image-72.png)
 
 *Lo schema*
-![image-73](../../imm/image-73.png)
+![image-73](image-73.png)
 
 
 *Lemma* 
@@ -230,13 +230,13 @@ Un albero AVL con n nodi ha altezza h=O(log n)
    	 $n_h \leq n$ 
 
 
-   ![image-74](../../imm/image-74.png)
+   ![image-74](image-74.png)
 
 
 
 #### Posso usare un albero AVL per implementare un dizionario?
 
-![image-75](../../imm/image-75.png)
+![image-75](image-75.png)
 
 come implemento *Insert(14)*? e *delete(25)*?
 
@@ -257,11 +257,11 @@ $\Rightarrow$ Manteniamo il bilanciamento tramite opportune *rotazioni*
 
 #### Rotazione di base verso *destra*/*sinistra* sul nodo *v*/*u*
 
-![image-76](../../imm/image-76.png)
+![image-76](image-76.png)
 
 - Mantiene la proprietà di ricerca
 - Richiede tempo O(1) 
-
+	
 #### Ribilanciamento tramite rotazioni
 
 - Le rotazioni sono effettuate su nodi sbilanciati.
@@ -282,7 +282,7 @@ Sia h l'altezza del sottoalbero destro di v
 
 - L'altezza di T(v) è *h+3*, l'altezza di T(u) è *h+2*, l'altezza di $T_{3}$ è *h* e l'altezza di $T_1$ è *h+1* $\Rightarrow$ $\beta(v)$ = +2 e lo sbilanciamento è provocato da $T_1$ 
 
-![image-77](../../imm/image-77.png)
+![image-77](image-77.png)
 
 - Si applica una rotazione semplice verso destra su *v*  (e i fattori di bilanciamento di tutti i nodi torneranno ok).
 - 2 sottocasi possibili:
@@ -309,12 +309,12 @@ Sia h l'altezza del sottoalbero destro di v
 - $\Rightarrow$ altezza di T(w) = h+1
 - $\beta(v)$=+2 e sbilanciamento è provocato dal sottoalbero destro di *z*
 
-![437x306](../../imm/image-81.png)
+![437x306](image-81.png)
 
 - Applicare *due rotazioni* semplici: una *verso sinistra* sul *figlio sinistro* del *nodo critico* (nodo z), l'altra *verso destra* sul *nodo critico* (nodo v)
 
 
-![700x162](../../imm/image-82.png)
+![700x162](image-82.png)
 
 - I fattori di bilanciamento di tutti i nodi tornano ok
 - L' altezza dell'albero dopo la rotazione passa da *h+3* a *h+2* 
@@ -354,7 +354,7 @@ Sia h l'altezza del sottoalbero destro di v
 
 ### Cancellazione con rotazioni a cascata 
 
-![image-88](../../imm/image-88.png)
+![image-88](image-88.png)
 
 #### Costo delle operazioni
 Tutte le operazioni hanno costo *O (log n)* poiché l'altezza dell'albero è O(log n) e ciascuna rotazione richiede solo tempo costante.
@@ -369,4 +369,5 @@ Tutte le operazioni hanno costo *O (log n)* poiché l'altezza dell'albero è O(l
 Nell'analisi della complessità dell'operazione di *insert/delete* abbiamo implicitamente usato le seguenti tre proprietà:
 
 (i) dato un nodo *v*, è possibile conoscere $\beta(v)$ in tempo O(1)
-(ii) dopo aver inserito/cancellato un nodo *v* nell'albero come se fosse un semplice BST, è possibile 
+(ii) dopo aver inserito/cancellato un nodo *v* nell'albero come se fosse un semplice BST, è possibile ricalcolare i fattori di bilanciamento dei nodi lungo il cammino da *v* alla radice in tempo complessivo O(log n)
+(iii) nell'eseguire le rotazioni necessarie per ribilanciare l'albero, è possibile aggiornare anche i fattori di bilanciamento dei nodi coinvolti in tempo complessivo O(log n)

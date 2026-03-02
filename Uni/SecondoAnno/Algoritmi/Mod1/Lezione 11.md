@@ -6,7 +6,7 @@
 
 #### Grafi non diretti
 
-![560x312](../../imm/image-138.png)
+![560x312](image-138.png)
 
 Con l'implementazione della *Matrice di adiacenza* riesco a "mappare" nodo per nodo, inserendo 1 nella cella se è presente un arco, 0 altrimenti.
 
@@ -26,7 +26,7 @@ c'è arco (u,v) ?                                 O(1)                          
 
 #### Grafi diretti
 
-![561x333](../../imm/image-139.png)
+![561x333](image-139.png)
 
 Nei grafi diretti, pur avendo dei percorsi obbligatori da seguire il costo di entrambe le strutture rimangono asintoticamente equivalenti alle precedenti
 
@@ -59,18 +59,18 @@ c'è arco (u,v) ?                                 O(1)                          
 Dato un grafo *G* (non pesato) e un nodo *s*, trova tutte le *distanze / cammini minimi* da *s* verso ogni altro nodo *v*.
 
 **Pseudocodice:**
-![432x299](../../imm/image-140.png)
+![432x299](image-140.png)
 
 
 *Implementazione grafica:*
 
-![412x383](../../imm/ScreencastFrom2025-12-1618-17-06-ezgif.com-video-to-gif-converter.gif)
+![412x383](ScreencastFrom2025-12-1618-17-06-ezgif.com-video-to-gif-converter.gif)
 
 Non incremento mai nodi già visitati, mi assicuro di segnare in modo corretto le distanze da *s*.
 
 Alla fine della visita BFS mi ritrovo un albero costruito in questo modo:
 
-![372x310](../../imm/image-141.png)
+![372x310](image-141.png)
 
 
 ##### Costo Visita BFS
@@ -99,14 +99,14 @@ Per ogni nodo *v*, il livello di *v* nell'albero BFS è pari alla distanza di *v
 #### Visita in profondità
 
 **Pseudocodice:**
-![568x268](../../imm/image-142.png)
+![568x268](image-142.png)
 
 *Implementazione grafica:*
 
-![](../../imm/ScreencastFrom2025-12-1619-06-33-ezgif.com-video-to-gif-converter.gif)
+![](ScreencastFrom2025-12-1619-06-33-ezgif.com-video-to-gif-converter.gif)
 
 Alla fine della visita DFS mi ritrovo un albero costruito in questa maniera:
-![218x389](../../imm/image-143.png)
+![218x389](image-143.png)
 
 ##### Costo Visita DFS
 Il tempo di esecuzione dipende dalla struttura dati usata per rappresentare il grafo (e dalla connettività o meno del grafo rispetto ad *s*):

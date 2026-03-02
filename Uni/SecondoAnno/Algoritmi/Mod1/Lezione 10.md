@@ -4,13 +4,13 @@
 ### Origine storiche
 Nel 1736, il matematico Eulero, affrontò l'annoso problema dei 7 ponti di Königsberg (Prussia):
 
-![421x332](../../imm/image-117.png)
+![421x332](image-117.png)
 
 E' possibile o meno fare una passeggiata che parta da un *qualsiasi* punto della città e percorra *una ed una* sola volta ciascuno dei 7 ponti?
 
 Eulero affrontò il problema schematizzando *topologicamente* la pianta della città, epurando così l'istanza da insignificanti dettagli *topografici*.
 
-![670x169](../../imm/image-118.png)
+![670x169](image-118.png)
 
 e così Königsberg venne rappresentata con un insieme di **4 punti** (uno per ciascuna zona della città), opportunatamente uniti da *7 linee* (una per ciascun ponte).
 
@@ -26,7 +26,7 @@ Grafo di Eulero associato alla città di Königsberg:
 **V = {A,B,C,D}**
 **E = { (A,B),(A,B),(A,D), (B,C), (B,C), (B,D), (C,D) }**
 
-![373x282](../../imm/image-119.png)
+![373x282](image-119.png)
 
 Nota: E' più propriamente detto *multigrafo*, in quanto contiene *archi paralleli*.
 
@@ -42,7 +42,7 @@ Nota: E' più propriamente detto *multigrafo*, in quanto contiene *archi paralle
 **δ(u): grado** di *u:* # numero di archi incidenti a *u* 
 **grado** di **G** = $max_{v \in V}$ {δ(v)}
 
-![221x206](../../imm/image-122.png) 
+![221x206](image-122.png) 
 
 
 
@@ -54,7 +54,7 @@ Un **grafo diretto D = (V,A)** consiste in:
 
 #### Esempio
 
-![326x218](../../imm/image-121.png)
+![326x218](image-121.png)
 
 #### Terminologia
 
@@ -69,19 +69,19 @@ $δ_{in}$(u): **grado entrante** di *u:* # archi entranti da *u*
 **grado entrante** di **G** = $max_{v \in V}$ {$δ_{in}$(v)}
 **grado uscente** di **G** = $max_{v \in V}$ {$δ_{out}$(v)}
 
-![221x206](../../imm/image-123.png)
+![221x206](image-123.png)
 
 
 ### Relazione fra grado dei nodi e numero di archi
 
 Una semplice proprietà:
 
-![189x103](../../imm/image-126.png)
+![189x103](image-126.png)
 
 - **δ(u): grado** di *u:* # numero di archi incidenti a *u*
 - **m** = |E| numero di archi
 
-![435x138](../../imm/image-124.png)
+![435x138](image-124.png)
 
 Il *grado di un nodo* (numero di collegamenti con altri nodi) è doppiamente più grande rispetto al *numero di archi* (collegamenti totali dei nodi in un grafo) all'interno di un grafo.
 
@@ -89,17 +89,17 @@ $\Rightarrow$ in ogni grafo # nodi di grado dispari è pari
 
 
 
-![189x103](../../imm/image-127.png)
+![189x103](image-127.png)
 
 Cosa ottengo se sommo i gradi: 
 
-![435x137](../../imm/image-128.png)
+![435x137](image-128.png)
 
 
 
 ### Terminologia
 
-![135x295](../../imm/image-129.png)
+![135x295](image-129.png)
 
 - **Cammino:** sequenza di nodi connessi da archi. $\Rightarrow$ (L,A)
 - **Lunghezza** di un cammino: # archi del cammino $\Rightarrow$ (L,A) = 5
@@ -108,7 +108,7 @@ Cosa ottengo se sommo i gradi:
 in un grafo *orientato*, il cammino deve rispettare il verso di orientamento degli archi.
 
 
-![135x293](../../imm/image-130.png)
+![135x293](image-130.png)
 
 - **G** è **connesso** se esiste un cammino per ogni coppia di vertici.
 - **Ciclo:** un cammino **chiuso**, ovvero un cammino da un vertice a se stesso. 
@@ -119,16 +119,16 @@ in un grafo *orientato*, il cammino deve rispettare il verso di orientamento deg
 
 - **Grafo Pesato:** è un grafo **G = (V,E,w)** in cui ad ogni arco viene associato un valore definito dalla funzione peso **w** (definita su un opportuno insieme, di solito reali).
 
-![315x186](../../imm/image-131.png) 
+![315x186](image-131.png) 
 
 
 
-![279x272](../../imm/image-132.png)
+![279x272](image-132.png)
 
 
 ### # Archi che può avere un grafo di n nodi
 
-![109x105](../../imm/image-133.png)
+![109x105](image-133.png)
 
 **Grafo totalmente sconnesso**: è un grafo G = (V,E) tale che V $\notin$ ∅ ed E $\notin$ ∅.
 
@@ -146,12 +146,12 @@ $\Rightarrow$ un grafo (senza archi paralleli) può avere un numero di archi *m*
 #### Definizione
 Un albero è un grafo connesso ed aciclico.
 
-![372x183](../../imm/image-135.png)
+![372x183](image-135.png)
 
 #### Teorema
 Sia T = (V,E) un albero $\Rightarrow$ |E| = |V| -1
 
-![625x376](../../imm/image-136.png)
+![625x376](image-136.png)
 
 
 ### Problema dei 7 ponti
@@ -162,6 +162,6 @@ Dato un grafo G, un *ciclo* (rispettivamente un *cammino*) *Euleriano* è un cic
 ### Teorema (di Eulero)
 Un grafo G ammette un *ciclo Euleriano* se e solo se tutti i nodi hanno grado pari. Inoltre, ammette un *cammino Euleriano* se e solo se tutti i nodi hanno grado pari tranne due (i due nodi di grado dispari sono gli estremi del cammino).
 
-![image-137](../../imm/image-137.png)
+![image-137](image-137.png)
 
 Il problema dei 7 ponti non ammette soluzione! 
