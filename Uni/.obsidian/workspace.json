@@ -4,35 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "8b084af8491d436b",
+        "id": "e72d8d130bbd574c",
         "type": "tabs",
         "children": [
           {
-            "id": "6f27f48cfec8fd58",
+            "id": "addd6e4de8f5786a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "SecondoAnno/Algoritmi/Lezione 10.md",
+                "file": "PrimoAnno/Architettura/Lezione 1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Lezione 10"
-            }
-          },
-          {
-            "id": "08f9c3118c5b7df6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "SecondoAnno/Algoritmi/Lezione 11.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Lezione 11"
+              "title": "Lezione 1"
             }
           }
         ]
@@ -92,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "dd951a65f1048afa",
@@ -157,13 +144,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "SecondoAnno/Algoritmi/Lezione 10.md",
+                "file": "PrimoAnno/Architettura/Lezione 1.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Struttura di Lezione 10"
+              "title": "Struttura di Lezione 1"
             }
           }
         ],
@@ -192,7 +179,7 @@
         "dimension": 33.570581257414,
         "children": [
           {
-            "id": "93ce32e41d9d8c59",
+            "id": "b0518a58f3a488b0",
             "type": "leaf",
             "state": {
               "type": "graph",
@@ -205,49 +192,62 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:Crea nuova Base": false,
       "switcher:Apri selezione rapida": false,
       "graph:Apri vista grafo": false,
       "canvas:Crea nuova lavagna": false,
       "daily-notes:Apri nota del giorno": false,
       "templates:Inserisci modello": false,
-      "command-palette:Apri riquadro comandi": false,
-      "bases:Create new base": false
+      "command-palette:Apri riquadro comandi": false
     }
   },
-  "active": "6f27f48cfec8fd58",
+  "active": "addd6e4de8f5786a",
   "lastOpenFiles": [
-    "SecondoAnno/Algoritmi/Lezione 11.md",
-    "SecondoAnno/Algoritmi/Lezione 4.md",
-    "SecondoAnno/Algoritmi/Lezione 5.md",
-    "SecondoAnno/Algoritmi/Lezione 6.md",
-    "SecondoAnno/Algoritmi/Lezione 7.md",
-    "SecondoAnno/Algoritmi/Lezione 8.md",
-    "SecondoAnno/Algoritmi/Lezione 9.md",
-    "SecondoAnno/Algoritmi/Lezione 10.md",
-    "imm/image-137.png",
-    "imm/image-136.png",
-    "imm/image-135.png",
-    "imm/image-134.png",
-    "imm/image-133.png",
-    "imm/image-132.png",
-    "imm/image-131.png",
-    "imm/image-130.png",
-    "imm/image-129.png",
-    "imm/image-128.png",
+    "imm/image-186.png",
+    "imm/image-185.png",
+    "imm/image-184.png",
+    "imm/image-183.png",
+    "imm/tassCP.jpeg",
+    "imm/image-182.png",
+    "imm/image-181.png",
+    "imm/image-180.png",
+    "imm/image-179.png",
+    "imm/image-178.png",
+    "SecondoAnno/Algoritmi/Mod2/Lezione 1.md",
+    "imm/image-177.png",
+    "SecondoAnno/LMP/Prolog/Introduzione Linguaggio Dichiarativo.md",
+    "SecondoAnno/Algoritmi/Mod1/Lezione 2.md",
+    "PrimoAnno/Architettura/Lezione 1.md",
+    "SecondoAnno/LMP/Prolog",
+    "SecondoAnno/Algoritmi/Mod2",
+    "SecondoAnno/Algoritmi/Mod1",
+    "SecondoAnno/Algoritmi/Esami/ASD_compito_18_07_2025_mod1.pdf",
+    "SecondoAnno/Algoritmi/Esami/Senza nome",
+    "SecondoAnno/Algoritmi/Esami/ASD_compito_09_09_2024_mod1.pdf",
+    "SecondoAnno/Algoritmi/Esami/ASD_compito_09_09_2025_mod1.pdf",
+    "Senza nome.base",
+    "SecondoAnno/Algoritmi/Mod1/Lezione 11.md",
+    "SecondoAnno/Algoritmi/Mod1/Lezione 13.md",
+    "SecondoAnno/Algoritmi/Mod1/Lezione 12.md",
+    "SecondoAnno/Algoritmi/Mod1/Lezione 10.md",
+    "SecondoAnno/Algoritmi/Mod1/Lezione 9.md",
+    "SecondoAnno/Algoritmi/Mod1/Lezione 8.md",
+    "SecondoAnno/Algoritmi/Mod1/Lezione 7.md",
+    "SecondoAnno/Algoritmi/Mod1/Lezione 6.md",
+    "SecondoAnno/Algoritmi/Mod1/Lezione 5.md",
+    "SecondoAnno/Algoritmi/Mod1/Lezione 3.md",
+    "SecondoAnno/Sistemi Operativi/Bash.md",
+    "SecondoAnno/Algoritmi/Mod1/Lezione 4.md",
+    "imm/File iLoveIMG Dec 17 2025.gif.mp4",
+    "PrimoAnno/Programmazione/Programmi C/Projects/README.md",
     "SecondoAnno/Avalanche/Introduzione.md",
-    "SecondoAnno/Algoritmi/Lezione 3.md",
-    "SecondoAnno/Algoritmi/Lezione 2.md",
     "SecondoAnno/Avalanche/Secondo workshop.md",
     "SecondoAnno/Avalanche",
     "SecondoAnno/Sistemi Operativi/Elementi di programmazione nei s.o..md",
-    "SecondoAnno/Sistemi Operativi/Creazione di processi.md",
-    "PrimoAnno/Analisi1/Dim_Orale_Analisi.pdf",
-    "SecondoAnno/Sistemi Operativi/Bash.md",
-    "PrimoAnno/Programmazione/Programmi C/Projects/README.md"
+    "SecondoAnno/Sistemi Operativi/Creazione di processi.md"
   ]
 }
