@@ -10,7 +10,7 @@ Il cervello del computer è la *CPU* (Central Process Unit), composta da:
 
 Le componenti di un computer sono collegate attraverso un *bus*: una collezione di cavi paralleli utilizzati per trasferire indirizzi, dati e segnali di controllo.
 
-![[../../../imm/image-178.png|503]]
+![503](../../../imm/image-178.png)
 
 
 ## Organizzazione della CPU 
@@ -20,7 +20,7 @@ Una tipica CPU di Von Neumann contiene il *Datapath* costituito da:
 - *Alu*, esegue operazioni su registri di input (A,B) del tipo: addizioni, sottrazioni e altre operazioni come  <span style="color:rgb(255, 0, 0)">Registro-Memoria </span> (è necessaria una fase di caricamento delle parole dalla memoria nei registri) e <span style="color:rgb(255, 0, 0)">Memoria-Memoria</span> (gli operandi sono già pronti nei registri). Il registro è posto nel registro di uscita che può essere memorizzato nei registri e successivamente nella memoria.
 - Vari bus di collegamento
 
-![[../../../imm/image-179.png]]
+![image-179](../../../imm/image-179.png)
 
 
 ## Esecuzione delle istruzioni
@@ -81,7 +81,7 @@ Il principale rallentamento nell'esecuzione delle istruzioni è dovuto all'opera
 Pipeline -> l'esecuzione è divisa in molte fasi, eseguibili in parallelo da unità hardware dedicate. 
 
 
-![[../../../imm/image-180.png|662]]
+![662](../../../imm/image-180.png)
 
 - Stage 1 : Fetch dell'istruzione dalla memoria e memorizzazione nel *buffer di prefetch*. 
 - Stage 2 : Decodifica dell'istruzione.
@@ -92,7 +92,7 @@ Pipeline -> l'esecuzione è divisa in molte fasi, eseguibili in parallelo da uni
 
 #### Processori con più pipeline
 
-![[../../../imm/image-181.png]]
+![image-181](../../../imm/image-181.png)
 
 C'è un problema:
 - Non tutte le istruzioni possono essere svolte in parallelo, l'input di una istruzione può dipendere dal risultato della precedente.
@@ -111,11 +111,11 @@ Esistono tre approcci differenti:
 
 Si basa su due concetti: flusso di istruzioni e flusso di dati.
 
-![[../../../imm/image-182.png]]
+![image-182](../../../imm/image-182.png)
 
 #### Tassonomia dei calcolatori paralleli
 
-![[../../../imm/tassCP.jpeg|602]]
+![602](../../../imm/tassCP.jpeg)
 
 
 
@@ -129,7 +129,7 @@ Le architetture di computer paralleli si dividono in 4 categorie:
 
 Architettura costituita da più CPU che condividono una memoria comune ->, le CPU devono essere sincronizzate per leggere o scrivere per evitare problemi di concorrenza.
 
-![[../../../imm/image-183.png|567]]
+![567](../../../imm/image-183.png)
 
 - UMA  (Uniform Memory Access) ->  Tutti i processori accedono alla memoria con lo stesso tempo 
 
@@ -159,7 +159,7 @@ I bytes in una parola possono essere scritti da sinistra a destra (*Big Endian*)
 
 La memoria cache risiede nelle CPU, memorizza piccole porzioni di dati chiamate *parole*, così quando la CPU ha bisogno di una parola, guarda prima nella cache (più veloce) e poi nella memoria principale. 
 
-![[../../../imm/image-184.png]]
+![image-184](../../../imm/image-184.png)
 
 
 ### Assemblaggio e tipi di memoria
@@ -168,10 +168,10 @@ Un gruppo di integrati, tipicamente 8/16, è montato su un piccolo circuito stam
 Chiamata *SIMM* (Single Inline Memory Module) quando ha una riga di connettori su un solo lato della scheda, oppure *DIMM* (Dual Inline Memory Module) quando ha due righe su entrambi i lati della scheda.
 SIMM trasferiscono 32 bit per ciclo di clock, la DIMM, il doppio, 64 bit.
 
-![[../../../imm/image-185.png]]
+![image-185](../../../imm/image-185.png)
 
 
 ### Gerarchie di memorie 
 
-![[../../../imm/image-186.png]]
+![image-186](../../../imm/image-186.png)
 
