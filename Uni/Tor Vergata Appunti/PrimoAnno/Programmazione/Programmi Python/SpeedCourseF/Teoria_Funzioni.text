@@ -1,0 +1,72 @@
+
+Ecco una spiegazione delle quattro funzioni Python che hai menzionato:
+
+## `ord()`
+Converte un carattere nel suo valore ASCII/Unicode corrispondente.
+
+
+print(ord('A'))    # 65
+print(ord('a'))    # 97
+print(ord('0'))    # 48
+print(ord('€'))    # 8364
+
+
+## `chr()`
+Fa l'opposto di `ord()`: converte un numero nel carattere ASCII/Unicode corrispondente.
+
+
+print(chr(65))     # 'A'
+print(chr(97))     # 'a'
+print(chr(48))     # '0'
+print(chr(8364))   # '€'
+
+
+## `sort()`
+È un metodo delle liste che ordina la lista **in place** (modifica l'originale) e non restituisce nulla.
+
+
+numeri = [3, 1, 4, 1, 5]
+numeri.sort()
+print(numeri)      # [1, 1, 3, 4, 5]
+
+parole = ['banana', 'apple', 'cherry']
+parole.sort()
+print(parole)      # ['apple', 'banana', 'cherry']
+
+# Ordinamento inverso
+numeri.sort(reverse=True)
+print(numeri)      # [5, 4, 3, 1, 1]
+
+
+## `sorted()`
+È una funzione built-in che restituisce una **nuova lista ordinata** senza modificare l'originale.
+
+
+numeri = [3, 1, 4, 1, 5]
+numeri_ordinati = sorted(numeri)
+print(numeri)              # [3, 1, 4, 1, 5] (originale inalterata)
+print(numeri_ordinati)     # [1, 1, 3, 4, 5]
+
+# Funziona anche con altri iterabili
+testo = "python"
+lettere_ordinate = sorted(testo)
+print(lettere_ordinate)    # ['h', 'n', 'o', 'p', 't', 'y']
+
+# Con parametri aggiuntivi
+parole = ['banana', 'apple', 'cherry']
+print(sorted(parole, reverse=True))           # ['cherry', 'banana', 'apple']
+print(sorted(parole, key=len))                # ['apple', 'banana', 'cherry'] (per lunghezza)
+
+
+**Differenza chiave**: `sort()` modifica la lista originale, `sorted()` crea una nuova lista ordinata.
+
+
+
+Dizionari: 
+
+
+
+
+
+
+
