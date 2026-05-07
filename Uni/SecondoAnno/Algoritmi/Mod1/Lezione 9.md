@@ -99,7 +99,7 @@ Utili per ripristinare la proprietà di ordinamento a heap su un nodo v che non 
 
 -> *insert(e,8)*
 
-![ezgif.com-animated-gif-maker (1)](ezgif.com-animated-gif-maker%20(1).gif)
+![ezgif.com-animated-gif-maker (1)](1)).gif)
 
 Insert permette di creare un nuovo nodo *v* con elemento *e* e chiave *k*, in modo che diventi una foglia sull'ultimo livello di *T*. La proprietà dell'ordinamento a heap viene ripristinata spingendo il nodo *v* verso l'alto tramite ripetuti scambi di nodi.
 
@@ -117,7 +117,7 @@ Può essere utilizzata anche per implementare la cancellazione del minimo, con c
 O(d $log_d$ n)
 
 ##### decreaseKey(elem e, chiave d)
-![ezgif.com-animated-gif-maker (2)](ezgif.com-animated-gif-maker%20(2).gif)
+![ezgif.com-animated-gif-maker (2)](2)).gif)
 
 DecreaseKey decrementa il valore della chiave nel nodo *v* contenente l'elemento *e* della qualità richiesta *d*. Ripristina poi la proprietà dell'ordinamento a heap spingendo il nodo *v* verso l'alto tramite ripetuti scambi di nodi.
 
@@ -125,7 +125,7 @@ DecreaseKey decrementa il valore della chiave nel nodo *v* contenente l'elemento
 
 ##### increaseKey(elem e, chiave d)
 
-![ezgif.com-animated-gif-maker (3)](ezgif.com-animated-gif-maker%20(3).gif)
+![ezgif.com-animated-gif-maker (3)](3)).gif)
 
 IncreaseKey aumenta il valore della chiave nel nodo contenente l'elemento *e* della quantità richiesta *d*. Ripristina poi la proprietà dell'ordinamento a heap spingendo il nodo *v* verso il basso tramite ripetuti scambi di nodi.
 
@@ -236,12 +236,12 @@ Durante l'esecuzione della procedura ristruttura esistono infatti al più tre $B
 #### Operazioni viste graficamente
 
 **DeleteMin(H)**
-![ezgif.com-animated-gif-maker (4)](ezgif.com-animated-gif-maker%20(4).gif)
+![ezgif.com-animated-gif-maker (4)](4)).gif)
 
 
 
 **DecreaseMin(H)**
-![ezgif.com-animated-gif-maker (5)](ezgif.com-animated-gif-maker%20(5).gif)
+![ezgif.com-animated-gif-maker (5)](5)).gif)
 
 
 **Merge(H)**

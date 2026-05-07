@@ -8,7 +8,7 @@ La dimensione della memoria è inversamente proporzionale al tempo di accesso e 
 - I **registri** della CPU sono le memorie più piccole, più veloci e più costose.
 - I **nastri magnetici** e i **dischi ottici** sono le memorie più lente ma le più economiche e grandi.
 
-![643](../../../imm/5976582202709445941.jpg)
+![643](5976582202709445941.jpg)
 
 Le tipologie di memorie possono essere classificate attraverso una struttura gerarchica:
 - Cima -> Base: Tempo di accesso e costo decrementano, ma cresce la capacità di memorizzazione.
@@ -31,7 +31,7 @@ Costituiti da:
 - il **Controllore del disco** è una scheda dedicata che pilota il disco, accetta comandi, corregge i dati e altro.
 
 
-![517|486](../../../imm/Gemini_Generated_Image_cm6itzcm6itzcm6i.png)
+![517|486](Gemini_Generated_Image_cm6itzcm6itzcm6i.png)
 
 
 ### Floppy Disk
@@ -60,7 +60,7 @@ Le performance di un H.D.M. dipendono da:
   
 - *Tempo di trasferimento* --> dipende dalla densità lineare e dalla velocità rotazionale.
 
-![438x312](../../../imm/6010122968123510142.jpg)
+![438x312](6010122968123510142.jpg)
 
 In un PC il controller dell'hard disk è su una scheda separata: 
 
@@ -90,7 +90,7 @@ Esistono diversi schemi: RAID 0 -> RAID 5:
 - **RAID 0**:  I dati sono suddivisi in strisce di k settori, memorizzati in dischi con modalità *round-robin* (risorse distribuite in maniera omogenea).
   Lavora bene con richieste di grandi dimensioni, non è un vero RAID poiché non esiste ridondanza (se si rompe un disco si perdono tutti i dati associati ad esso).
 
-![466](../../../imm/6010122968123510175.jpg)
+![466](6010122968123510175.jpg)
 
 
 
@@ -99,13 +99,13 @@ Esistono diversi schemi: RAID 0 -> RAID 5:
 	- Durante la *lettura* possono essere utilizzzate tutte le copie distribuendo il carico su più dischi.
   Il ripristino è semplice e veloce.
 
-![6010122968123510179](../../../imm/6010122968123510179.jpg)
+![6010122968123510179](6010122968123510179.jpg)
 
 
 
 - **RAID 2**: Utilizza parole binarie per decomporre le informazioni su vari dischi, se un disco si rompe si può ricostruire una copia facilmente.
   
-  ![6010122968123510186](../../../imm/6010122968123510186.jpg)
+  ![6010122968123510186](6010122968123510186.jpg)
 
 
 
@@ -113,20 +113,20 @@ Esistono diversi schemi: RAID 0 -> RAID 5:
   I dati sono suddivi su più dischi, perciò devono essere sincronizzati, non ci sono garanzie su errori casuali perché un solo bit non è sufficiente.
   Offre un'alta velocità di trasferimento.
 
-![586](../../../imm/6010122968123510187.jpg)
+![586](6010122968123510187.jpg)
 
 
 
 - **RAID4**: Lavora con le strisce e non richiede dischi sincronizzati, si esegue l' EXOR bit a  bit di tutte le strisce ottenendo una striscia di parità.
 
-![586](../../../imm/6010122968123510188.jpg)
+![586](6010122968123510188.jpg)
 
 
 
 - **RAID 5**: Anche RAID 5 lavora con le strisce, distribuendo in modalità round-robin (evitando così il collo di bottiglia) le strisce di parità.
   Se si rompe un disco ripristinarlo è un processo complesso ricostruirlo.
   
-  ![569](../../../imm/6012374767937195341.jpg)
+  ![569](6012374767937195341.jpg)
   
 ### SSD
 
@@ -144,7 +144,7 @@ I **CD-ROM** (Compact Disc-Read Only Memory) sono composti da:
 		1. **Pit** --> Depressioni scritte in modo continuo su una spirale che parte dal centro del disco.
 		2. *Land* --> Aree non incise.
 		   
-		   ![image-188](../../../imm/image-188.png)
+		   ![image-188](image-188.png)
 
 Per *leggere* un CD-ROM si utilizza un laser a bassa potenza.
 
@@ -153,7 +153,7 @@ Il *formato base* di un CD-ROM codifica:
 - <span style="color:rgb(0, 176, 240)">42 Simboli</span> per un <span style="color:rgb(0, 176, 240)">frame</span>.
 - <span style="color:rgb(0, 176, 240)">98 Frame</span> per un <span style="color:rgb(0, 176, 240)">settore</span>.
 
-![image-187](../../../imm/image-187.png)
+![image-187](image-187.png)
 
 
 
@@ -162,7 +162,7 @@ Il *formato base* di un CD-ROM codifica:
 I **CD-R** (CD Registrabili) sono simili ai *CD-ROM*, hanno in più uno strato di pigmento che permette di scrivere i pit.
 Contengono una scanalatura che guida il laser in fase di scrittura -> quando il laser colpisce il pigmento crea una zona oscura non ripristinabile.
 
-![424x257](../../../imm/image-189.png)
+![424x257](image-189.png)
 
 
 
@@ -203,7 +203,7 @@ La **Scheda Madre** è la scheda principale che contiene:
 - *Bus* di comunicazione.
 - *Connettori* per i *controller* di *dispositivi I/O*.
 
-![421](../../../imm/image-190.png)
+![421](image-190.png)
 
 
 ### Bus Interno
@@ -211,7 +211,7 @@ La **Scheda Madre** è la scheda principale che contiene:
 In un computer un **Bus** è un sistema di comunicazione che collega la *CPU*, la *Memoria* e i *dispositivi* di *I/O*.
 E' un insieme di cavi paralleli --> trasmette più bit nella stessa unità di tempo. 
 
-![437](../../../imm/image-191.png)
+![437](image-191.png)
 
 
 Un Bus Interno i può suddividere in:
@@ -272,11 +272,11 @@ Esistono vari tipi di bus per ottimizzare ogni operazione
 
 	 - Due *Bridge* collegano i due bus (punto 2.) e la linea dedicata tra CPU e memoria (punto 1.).
 
-		![541x300](../../../imm/6012374767937195380.jpg)
+		![541x300](6012374767937195380.jpg)
 
 - **BUS PCIe** --> Evoluzione del *Bus PCI*, è una rete punto-punto con linee seriali tra le periferiche.
 
-	![461](../../../imm/6012374767937195381.jpg)
+	![461](6012374767937195381.jpg)
 
 
 

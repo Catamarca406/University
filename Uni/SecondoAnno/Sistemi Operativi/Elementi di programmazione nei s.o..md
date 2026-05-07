@@ -2,7 +2,7 @@
 
 C everything is a file
 
-![694x124](../../imm/image-11.png)
+![694x124](image-11.png)
 
 
 
@@ -17,7 +17,7 @@ Cosa dobbiamo fare per stampare "Hello World" sulla console (output standard) ?
 
 
 ### Build Process 
-![307x390](../../imm/image-12.png)
+![307x390](image-12.png)
 
 
 
@@ -37,7 +37,7 @@ pid_t wait(int * wstatus) = Attende che i processi figli cambino stato
 -scrive lo stato in wstatus
 -Ad esempio causa una exit o un segnale
 
-![image-18](../../imm/image-18.png)
+![image-18](image-18.png)
 
 int execv (const char * path, char * constargv[]) = Carica un nuovo binario (path) nel processo corrente, rimuovendo tutte le altre mappature di memoria
 
@@ -47,7 +47,7 @@ Con i segnali
 
 ### Gestione dei segnali
 
-![image-19](../../imm/image-19.png)
+![image-19](image-19.png)
 
 
 ### Comunicazione tra processi attraverso pipe

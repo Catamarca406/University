@@ -103,7 +103,7 @@ Per ogni nodo *v*, il livello di *v* nell'albero BFS è pari alla distanza di *v
 
 *Implementazione grafica:*
 
-![](ScreencastFrom2025-12-1619-06-33-ezgif.com-video-to-gif-converter.gif)
+![ScreencastFrom2025-12-1619-06-33-ezgif.com-video-to-gif-converter](ScreencastFrom2025-12-1619-06-33-ezgif.com-video-to-gif-converter.gif)
 
 Alla fine della visita DFS mi ritrovo un albero costruito in questa maniera:
 ![218x389](image-143.png)

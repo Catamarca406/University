@@ -1,3 +1,4 @@
+#programmazione
 # 🧠 Python – Complessità (VERSIONE SOLO ESAME)
 
 ## 📌 Regole d’oro

@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "e72d8d130bbd574c",
+        "id": "d2824d1918e4f223",
         "type": "tabs",
         "children": [
           {
-            "id": "addd6e4de8f5786a",
+            "id": "e788d6e9d0c7b4f8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PrimoAnno/Architettura/Lezione 1.md",
+                "file": "PrimoAnno/Architettura/Appunti md/Lezione 2.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Lezione 1"
+              "title": "Lezione 2"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#architettura",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "dd951a65f1048afa",
@@ -96,8 +95,8 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "SecondoAnno/Algoritmi/Lezione 9.md",
-                "collapseAll": false,
+                "file": "PrimoAnno/Architettura/Lezione 2.md",
+                "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
@@ -106,7 +105,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Riferimenti a Lezione 9"
+              "title": "Riferimenti a Lezione 2"
             }
           },
           {
@@ -115,12 +114,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "SecondoAnno/Algoritmi/Lezione 9.md",
+                "file": "PrimoAnno/Architettura/Lezione 2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Collegamenti in uscita da Lezione 9"
+              "title": "Collegamenti in uscita da Lezione 2"
             }
           },
           {
@@ -130,7 +129,7 @@
               "type": "tag",
               "state": {
                 "sortOrder": "frequency",
-                "useHierarchy": true,
+                "useHierarchy": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
@@ -144,13 +143,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PrimoAnno/Architettura/Lezione 1.md",
+                "file": "PrimoAnno/Architettura/Appunti md/Lezione 2.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Struttura di Lezione 1"
+              "title": "Struttura di Lezione 2"
             }
           }
         ],
@@ -179,7 +178,7 @@
         "dimension": 33.570581257414,
         "children": [
           {
-            "id": "b0518a58f3a488b0",
+            "id": "1badea18d36e1bdf",
             "type": "leaf",
             "state": {
               "type": "graph",
@@ -192,46 +191,58 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
       "bases:Crea nuova Base": false,
       "switcher:Apri selezione rapida": false,
-      "graph:Apri vista grafo": false,
       "canvas:Crea nuova lavagna": false,
       "daily-notes:Apri nota del giorno": false,
       "templates:Inserisci modello": false,
-      "command-palette:Apri riquadro comandi": false
+      "command-palette:Apri riquadro comandi": false,
+      "graph:Apri vista grafo": false
     }
   },
-  "active": "addd6e4de8f5786a",
+  "active": "f2c8e33fa3145d62",
   "lastOpenFiles": [
-    "imm/image-186.png",
-    "imm/image-185.png",
-    "imm/image-184.png",
-    "imm/image-183.png",
-    "imm/tassCP.jpeg",
-    "imm/image-182.png",
-    "imm/image-181.png",
-    "imm/image-180.png",
-    "imm/image-179.png",
-    "imm/image-178.png",
+    "Tor Vergata Appunti",
+    "PrimoAnno/Architettura/Appunti md/Lezione 1.md",
+    "PrimoAnno/Architettura/Appunti md/Lezione 2.md",
+    "imm/6010122968123510142.jpg",
+    "imm/6010122968123510175.jpg",
+    "imm/5976582202709445941.jpg",
+    "imm/6012374767937195381.jpg",
+    "imm/6012374767937195380.jpg",
+    "imm/ezgif.com-animated-gif-maker (2).gif",
+    "imm/6010122968123510187.jpg",
+    "imm/6010122968123510186.jpg",
+    "imm/6010122968123510179.jpg",
+    "SecondoAnno/Algoritmi/Mod1/Lezione 13.md",
+    "SecondoAnno/Algoritmi/Mod1/Lezione 11.md",
+    "SecondoAnno/Algoritmi/Mod1/Lezione 3.md",
+    "Senza nome.canvas",
+    "2026-04-30.md",
+    "PrimoAnno/Programmazione/Programmi Python/python_bc_exam.md",
+    "PrimoAnno/Architettura/Lezione 2.md",
+    "PrimoAnno/Architettura/Lezione 1.md",
+    "PrimoAnno/Programmazione/Programmi Python/python_builtin_costs.md",
+    "PrimoAnno/Architettura/PDFLezioni/lezione_01.pdf",
+    "PrimoAnno/Architettura/PDFLezioni/lezione_02.pdf",
+    "imm/image-191.png",
+    "PrimoAnno/Architettura/PDFLezioni/lezione_08.pdf",
+    "PrimoAnno/Architettura/PDFLezioni/lezione_07.pdf",
+    "PrimoAnno/Architettura/PDFLezioni/lezione_04.pdf",
+    "PrimoAnno/Architettura/PDFLezioni/lezione_05.pdf",
+    "PrimoAnno/Architettura/PDFLezioni/lezione_03.pdf",
+    "PrimoAnno/Architettura/PDFLezioni/lezione_06.pdf",
+    "SecondoAnno/Fondamenti/Dispense/D03TesiDiChurchTuring.pdf",
+    "SecondoAnno/Fondamenti/Dispense/D02MacchineTuring.pdf",
+    "PrimoAnno/Architettura/Senza nome.canvas",
     "SecondoAnno/Algoritmi/Mod2/Lezione 1.md",
-    "imm/image-177.png",
     "SecondoAnno/LMP/Prolog/Introduzione Linguaggio Dichiarativo.md",
     "SecondoAnno/Algoritmi/Mod1/Lezione 2.md",
-    "PrimoAnno/Architettura/Lezione 1.md",
-    "SecondoAnno/LMP/Prolog",
-    "SecondoAnno/Algoritmi/Mod2",
-    "SecondoAnno/Algoritmi/Mod1",
-    "SecondoAnno/Algoritmi/Esami/ASD_compito_18_07_2025_mod1.pdf",
-    "SecondoAnno/Algoritmi/Esami/Senza nome",
-    "SecondoAnno/Algoritmi/Esami/ASD_compito_09_09_2024_mod1.pdf",
-    "SecondoAnno/Algoritmi/Esami/ASD_compito_09_09_2025_mod1.pdf",
-    "Senza nome.base",
-    "SecondoAnno/Algoritmi/Mod1/Lezione 11.md",
-    "SecondoAnno/Algoritmi/Mod1/Lezione 13.md",
     "SecondoAnno/Algoritmi/Mod1/Lezione 12.md",
     "SecondoAnno/Algoritmi/Mod1/Lezione 10.md",
     "SecondoAnno/Algoritmi/Mod1/Lezione 9.md",
@@ -239,15 +250,10 @@
     "SecondoAnno/Algoritmi/Mod1/Lezione 7.md",
     "SecondoAnno/Algoritmi/Mod1/Lezione 6.md",
     "SecondoAnno/Algoritmi/Mod1/Lezione 5.md",
-    "SecondoAnno/Algoritmi/Mod1/Lezione 3.md",
     "SecondoAnno/Sistemi Operativi/Bash.md",
     "SecondoAnno/Algoritmi/Mod1/Lezione 4.md",
-    "imm/File iLoveIMG Dec 17 2025.gif.mp4",
     "PrimoAnno/Programmazione/Programmi C/Projects/README.md",
     "SecondoAnno/Avalanche/Introduzione.md",
-    "SecondoAnno/Avalanche/Secondo workshop.md",
-    "SecondoAnno/Avalanche",
-    "SecondoAnno/Sistemi Operativi/Elementi di programmazione nei s.o..md",
-    "SecondoAnno/Sistemi Operativi/Creazione di processi.md"
+    "SecondoAnno/Avalanche/Secondo workshop.md"
   ]
 }
