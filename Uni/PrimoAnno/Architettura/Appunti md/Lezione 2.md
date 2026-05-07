@@ -8,7 +8,7 @@ La dimensione della memoria è inversamente proporzionale al tempo di accesso e 
 - I **registri** della CPU sono le memorie più piccole, più veloci e più costose.
 - I **nastri magnetici** e i **dischi ottici** sono le memorie più lente ma le più economiche e grandi.
 
-![643](/imm/5976582202709445941.jpg)
+![643](imm/5976582202709445941.jpg)
 
 Le tipologie di memorie possono essere classificate attraverso una struttura gerarchica:
 - Cima -> Base: Tempo di accesso e costo decrementano, ma cresce la capacità di memorizzazione.
