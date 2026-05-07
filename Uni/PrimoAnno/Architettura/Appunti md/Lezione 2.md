@@ -8,7 +8,7 @@ La dimensione della memoria è inversamente proporzionale al tempo di accesso e 
 - I **registri** della CPU sono le memorie più piccole, più veloci e più costose.
 - I **nastri magnetici** e i **dischi ottici** sono le memorie più lente ma le più economiche e grandi.
 
-![5976582202709445941](../../../imm/5976582202709445941.jpg)
+![643](../../../imm/5976582202709445941.jpg)
 
 Le tipologie di memorie possono essere classificate attraverso una struttura gerarchica:
 - Cima -> Base: Tempo di accesso e costo decrementano, ma cresce la capacità di memorizzazione.
@@ -31,7 +31,7 @@ Costituiti da:
 - il **Controllore del disco** è una scheda dedicata che pilota il disco, accetta comandi, corregge i dati e altro.
 
 
-![517|517](../../../imm/Gemini_Generated_Image_cm6itzcm6itzcm6i.png)
+![517|486](../../../imm/Gemini_Generated_Image_cm6itzcm6itzcm6i.png)
 
 
 ### Floppy Disk
