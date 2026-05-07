@@ -123,21 +123,6 @@
             }
           },
           {
-            "id": "80aca3dba932784f",
-            "type": "leaf",
-            "state": {
-              "type": "tag",
-              "state": {
-                "sortOrder": "frequency",
-                "useHierarchy": false,
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-tags",
-              "title": "Etichette"
-            }
-          },
-          {
             "id": "b0eee705bd4e378b",
             "type": "leaf",
             "state": {
@@ -153,7 +138,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       },
       {
         "id": "d7001a58dde1d791",
@@ -191,8 +176,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -205,11 +189,16 @@
       "graph:Apri vista grafo": false
     }
   },
-  "active": "f2c8e33fa3145d62",
+  "active": "e788d6e9d0c7b4f8",
   "lastOpenFiles": [
+    "SecondoAnno/Algoritmi/Mod1/Lezione 12.md",
+    "SecondoAnno/Algoritmi/Mod1/Lezione 2.md",
+    "PrimoAnno/Architettura/Appunti md/Lezione 2.md",
+    "Tor Vergata Appunti/imm/image.png",
+    "imm/image-192.png",
+    "Tor Vergata Appunti/imm",
     "Tor Vergata Appunti",
     "PrimoAnno/Architettura/Appunti md/Lezione 1.md",
-    "PrimoAnno/Architettura/Appunti md/Lezione 2.md",
     "imm/6010122968123510142.jpg",
     "imm/6010122968123510175.jpg",
     "imm/5976582202709445941.jpg",
@@ -218,7 +207,6 @@
     "imm/ezgif.com-animated-gif-maker (2).gif",
     "imm/6010122968123510187.jpg",
     "imm/6010122968123510186.jpg",
-    "imm/6010122968123510179.jpg",
     "SecondoAnno/Algoritmi/Mod1/Lezione 13.md",
     "SecondoAnno/Algoritmi/Mod1/Lezione 11.md",
     "SecondoAnno/Algoritmi/Mod1/Lezione 3.md",
@@ -230,20 +218,15 @@
     "PrimoAnno/Programmazione/Programmi Python/python_builtin_costs.md",
     "PrimoAnno/Architettura/PDFLezioni/lezione_01.pdf",
     "PrimoAnno/Architettura/PDFLezioni/lezione_02.pdf",
-    "imm/image-191.png",
     "PrimoAnno/Architettura/PDFLezioni/lezione_08.pdf",
     "PrimoAnno/Architettura/PDFLezioni/lezione_07.pdf",
     "PrimoAnno/Architettura/PDFLezioni/lezione_04.pdf",
     "PrimoAnno/Architettura/PDFLezioni/lezione_05.pdf",
     "PrimoAnno/Architettura/PDFLezioni/lezione_03.pdf",
     "PrimoAnno/Architettura/PDFLezioni/lezione_06.pdf",
-    "SecondoAnno/Fondamenti/Dispense/D03TesiDiChurchTuring.pdf",
-    "SecondoAnno/Fondamenti/Dispense/D02MacchineTuring.pdf",
     "PrimoAnno/Architettura/Senza nome.canvas",
     "SecondoAnno/Algoritmi/Mod2/Lezione 1.md",
     "SecondoAnno/LMP/Prolog/Introduzione Linguaggio Dichiarativo.md",
-    "SecondoAnno/Algoritmi/Mod1/Lezione 2.md",
-    "SecondoAnno/Algoritmi/Mod1/Lezione 12.md",
     "SecondoAnno/Algoritmi/Mod1/Lezione 10.md",
     "SecondoAnno/Algoritmi/Mod1/Lezione 9.md",
     "SecondoAnno/Algoritmi/Mod1/Lezione 8.md",

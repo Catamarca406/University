@@ -5,7 +5,7 @@
 - Due task si dicono *compatibili* se non si sovrappongono
 - Obiettivo: trovare il massimo sottoinsieme di task reciprocamente compatibili 
 
-![551](image-176.png)
+![551](../../../imm/image-176.png)
 
 
 
@@ -29,7 +29,7 @@ Prendiamo ogni task purché sia compatibile con le altre prese in precedenza.
 - [Intervallo più corto] Consideriamo le task in ordine crescente di $f_j$ - $s_j$ .
 - [Minor numero di conflitti] Per ogni task j, conta il numero di task che sono in conflitto con $c_j$ . Pianifica in ordine crescente di $c_j$ .
 
-![360](image-177.png)
+![360](../../../imm/image-177.png)
 
 
 **PseudoCodice**: 
