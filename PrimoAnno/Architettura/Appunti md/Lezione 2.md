@@ -1,4 +1,4 @@
-#architettura 
+#Architettura 
 # Memoria Secondaria
 
 ## Gerarchie di memorie 

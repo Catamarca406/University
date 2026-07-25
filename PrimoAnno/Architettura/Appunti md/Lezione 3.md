@@ -1,4 +1,4 @@
-#architettura 
+#Architettura 
 
 # Livello Logico Digitale
 

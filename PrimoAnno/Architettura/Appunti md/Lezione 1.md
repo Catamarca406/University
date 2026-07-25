@@ -1,4 +1,4 @@
-#architettura
+#Architettura
 # Processori
 
 Il cervello del computer è la *CPU* (Central Process Unit), composta da:
