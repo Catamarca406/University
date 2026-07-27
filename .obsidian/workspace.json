@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PrimoAnno/Architettura/Appunti md/Lezione 5.md",
+                "file": "PrimoAnno/Architettura/Appunti md/Lezione 8.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Lezione 5"
+              "title": "Lezione 8"
             }
           }
         ]
@@ -126,13 +126,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PrimoAnno/Architettura/PDFLezioni/Prima_Parte/lezione_06.pdf",
+                "file": "PrimoAnno/Architettura/Appunti md/Lezione 8.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Struttura di lezione_06"
+              "title": "Struttura di Lezione 8"
             }
           },
           {
@@ -205,14 +205,25 @@
   },
   "active": "5a3b3d8712f9699e",
   "lastOpenFiles": [
-    "PrimoAnno/Architettura/Appunti md/Lezione 4.md",
+    "imm/image-229.png",
+    "imm/image-228.png",
+    "imm/image-227.png",
+    "imm/image-226.png",
+    "imm/image-225.png",
+    "imm/image-224.png",
+    "imm/image-223.png",
+    "imm/image-222.png",
+    "PrimoAnno/Architettura/Appunti md/Lezione 8.md",
+    "PrimoAnno/Architettura/Appunti md/Lezione 7.md",
+    "imm/image-221.png",
+    "PrimoAnno/Architettura/Appunti md/Lezione 6.md",
+    "imm/image-220.png",
+    "imm/image-219.png",
     "PrimoAnno/Architettura/Appunti md/Lezione 5.md",
     "PrimoAnno/Architettura/Appunti md/Lezione 3.md",
+    "PrimoAnno/Architettura/Appunti md/Lezione 4.md",
     "PrimoAnno/Architettura/PDFLezioni/Prima_Parte/lezione_05.pdf",
-    "imm/image-216.png",
     "PrimoAnno/Architettura/Appunti md/Lezione 1.md",
-    "imm/image-215.png",
-    "PrimoAnno/Architettura/Appunti md/Lezione 6-7.md",
     "PrimoAnno/Architettura/PDFLezioni/Prima_Parte/lezione_07.pdf",
     "PrimoAnno/Architettura/PDFLezioni/Prima_Parte/lezione_06.pdf",
     "PrimoAnno/Architettura/PDFLezioni/Seconda_Parte/lezione_13.pdf",
@@ -220,13 +231,6 @@
     "PrimoAnno/Architettura/Appunti md/Lezione 2.md",
     "PrimoAnno/Architettura/PDFLezioni/Prima_Parte/lezione_08.pdf",
     "Utility/symbols.pdf",
-    "imm/image-214.png",
-    "imm/image-213.png",
-    "imm/image-212.png",
-    "imm/image-211.png",
-    "imm/image-210.png",
-    "imm/image-209.png",
-    "imm/image-208.png",
     "PrimoAnno/Architettura/Appunti md/Guida ARM.md",
     "PrimoAnno/Architettura/Appunti md/ExArmCPUlator/ExBase.s",
     "PrimoAnno/Architettura/Appunti md/ExArmCPUlator",
@@ -236,7 +240,6 @@
     "SecondoAnno/Algoritmi/Mod1/Lezione 2.md",
     "SecondoAnno/Algoritmi/Mod1/Lezione 4.md",
     "SecondoAnno/Algoritmi/Mod1/Lezione 3.md",
-    "imm/image-207.png",
     "SecondoAnno/Algoritmi/Mod1/Lezione 12.md",
     "SecondoAnno/Algoritmi/Mod1/Lezione 13.md",
     "SecondoAnno/Algoritmi/Mod1/Lezione 11.md",
@@ -249,8 +252,6 @@
     "PrimoAnno/Architettura/Senza nome.canvas",
     "SecondoAnno/Algoritmi/Mod2/Lezione 1.md",
     "SecondoAnno/LMP/Prolog/Introduzione Linguaggio Dichiarativo.md",
-    "SecondoAnno/Algoritmi/Mod1/Lezione 10.md",
-    "SecondoAnno/Algoritmi/Mod1/Lezione 9.md",
-    "SecondoAnno/Algoritmi/Mod1/Lezione 8.md"
+    "SecondoAnno/Algoritmi/Mod1/Lezione 10.md"
   ]
 }
