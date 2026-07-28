@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lab25A - Ispirazione pagina web</title>
+    <style>
+      :root {
+        --bg: #07111f;
+        --surface: #101d31;
+        --surface-2: #16253d;
+        --text: #f3f7ff;
+        --muted: #8aa1c0;
+        --accent: #76e1ff;
+        --accent-2: #8a7dff;
+        --accent-3: #5ee6b0;
+        --border: rgba(255, 255, 255, 0.12);
+        --shadow: 0 20px 45px rgba(0, 0, 0, 0.28);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: Inter, "Segoe UI", Roboto, Arial, sans-serif;
+        color: var(--text);
+        background:
+          radial-gradient(circle at top left, rgba(118, 225, 255, 0.18), transparent 24%),
+          linear-gradient(135deg, var(--bg), #0d1728 65%, #0b1324);
+        line-height: 1.6;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      .container {
+        width: min(1140px, calc(100% - 2rem));
+        margin: 0 auto;
+      }
+
+      header {
+        padding: 1rem 0 2rem;
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 1.25rem;
+        background: rgba(16, 29, 49, 0.75);
+        border: 1px solid var(--border);
+        border-radius: 999px;
+        backdrop-filter: blur(10px);
+        box-shadow: var(--shadow);
+        position: sticky;
+        top: 1rem;
+        z-index: 10;
+      }
+
+      .brand {
+        font-weight: 700;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        font-size: 0.95rem;
+      }
+
+      .nav-links {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+      }
+
+      .nav-links a {
+        color: var(--muted);
+        font-size: 0.95rem;
+      }
+
+      .nav-links a:hover {
+        color: var(--text);
+      }
+
+      .hero {
+        display: grid;
+        grid-template-columns: 1.2fr 0.8fr;
+        gap: 2rem;
+        align-items: center;
+        padding: 3rem 0 2.5rem;
+      }
+
+      .hero h1 {
+        font-size: clamp(2rem, 4vw, 3.2rem);
+        margin: 0 0 1rem;
+        line-height: 1.1;
+      }
+
+      .hero p {
+        color: var(--muted);
+        font-size: 1.05rem;
+        margin-bottom: 1.4rem;
+        max-width: 640px;
+      }
+
+      .hero-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.75rem;
+      }
+
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid transparent;
+        border-radius: 999px;
+        padding: 0.8rem 1.1rem;
+        font-weight: 600;
+        transition: transform 160ms ease, border-color 160ms ease, background 160ms ease;
+      }
+
+      .btn:hover {
+        transform: translateY(-2px);
+      }
+
+      .btn-primary {
+        background: linear-gradient(135deg, var(--accent), var(--accent-2));
+        color: #04111d;
+      }
+
+      .btn-secondary {
+        border-color: var(--border);
+        background: rgba(255, 255, 255, 0.04);
+      }
+
+      .card {
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.025));
+        border: 1px solid var(--border);
+        border-radius: 24px;
+        padding: 1.2rem;
+        box-shadow: var(--shadow);
+      }
+
+      .hero-panel {
+        padding: 1.4rem;
+        display: grid;
+        gap: 1rem;
+      }
+
+      .hero-panel .stat {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.9rem 0;
+        border-bottom: 1px solid var(--border);
+      }
+
+      .hero-panel .stat:last-child {
+        border-bottom: none;
+      }
+
+      .section {
+        padding: 1rem 0 2rem;
+      }
+
+      .section-title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1rem;
+      }
+
+      .section-title h2 {
+        margin: 0;
+        font-size: 1.2rem;
+      }
+
+      .section-title span {
+        color: var(--muted);
+        font-size: 0.95rem;
+      }
+
+      .grid {
+        display: grid;
+        gap: 1rem;
+      }
+
+      .grid-3 {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+
+      .grid-2 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .feature-card {
+        padding: 1.15rem;
+        min-height: 180px;
+      }
+
+      .feature-card h3 {
+        margin: 0 0 0.45rem;
+        font-size: 1rem;
+      }
+
+      .feature-card p {
+        color: var(--muted);
+        margin: 0;
+        font-size: 0.95rem;
+      }
+
+      .pill {
+        display: inline-block;
+        padding: 0.35rem 0.65rem;
+        border-radius: 999px;
+        background: rgba(118, 225, 255, 0.16);
+        color: var(--accent);
+        font-size: 0.82rem;
+        margin-bottom: 0.85rem;
+      }
+
+      .checklist {
+        display: grid;
+        gap: 0.75rem;
+      }
+
+      .check-item {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        padding: 0.75rem 0.85rem;
+        border: 1px solid var(--border);
+        border-radius: 16px;
+        background: rgba(255, 255, 255, 0.03);
+      }
+
+      .check-item input {
+        accent-color: var(--accent-3);
+        width: 1rem;
+        height: 1rem;
+      }
+
+      .check-item span {
+        color: var(--muted);
+      }
+
+      .check-item.completed span {
+        color: var(--text);
+        text-decoration: line-through;
+      }
+
+      footer {
+        padding: 2rem 0 3rem;
+        color: var(--muted);
+        font-size: 0.95rem;
+        text-align: center;
+      }
+
+      @media (max-width: 900px) {
+        .hero,
+        .grid-3,
+        .grid-2 {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @media (max-width: 680px) {
+        nav {
+          border-radius: 20px;
+          padding: 1rem;
+        }
+
+        .nav-links {
+          display: none;
+        }
+
+        .hero {
+          padding-top: 2rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <a href="#top" class="brand">Lab25A</a>
+          <div class="nav-links">
+            <a href="#appunti">Appunti</a>
+            <a href="#hackathon">Hackathon</a>
+            <a href="#didattica">Didattica</a>
+            <a href="#tesi">Tesi</a>
+            <a href="#community">Community</a>
+          </div>
+        </nav>
+
+        <section class="hero" id="top">
+          <div>
+            <div class="pill">Laboratorio di innovazione e supporto studente</div>
+            <h1>Un punto unico per studiare, collaborare e orientarsi.</h1>
+            <p>
+              Il sito del Lab25A unisce appunti, progetti, risorse didattiche, tutoraggio,
+              annunci e strumenti utili per rendere la vita universitaria più chiara
+              e organizzata.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#didattica">Esplora le risorse</a>
+              <a class="btn btn-secondary" href="#community">Vai alla bacheca</a>
+            </div>
+          </div>
+
+          <div class="card hero-panel">
+            <div class="stat">
+              <span>Appunti</span>
+              <strong>100+</strong>
+            </div>
+            <div class="stat">
+              <span>Hackathon</span>
+              <strong>8 edizioni</strong>
+            </div>
+            <div class="stat">
+              <span>Find a Tutor</span>
+              <strong>Attivo</strong>
+            </div>
+            <div class="stat">
+              <span>Ultimo aggiornamento</span>
+              <strong id="today">-</strong>
+            </div>
+          </div>
+        </section>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="section" id="appunti">
+        <div class="section-title">
+          <h2>Sezioni principali</h2>
+          <span>Struttura semplice, chiara e orientata all'utente</span>
+        </div>
+        <div class="grid grid-3">
+          <article class="card feature-card">
+            <div class="pill">Appunti</div>
+            <h3>Organizzati per corso</h3>
+            <p>Un accesso diretto agli appunti, ai link utili e ai materiali condivisi dal team.</p>
+          </article>
+          <article class="card feature-card">
+            <div class="pill">Hackathon</div>
+            <h3>Archivio di progetti</h3>
+            <p>Catalogo delle edizioni passate con idee, risultati e spunti per nuove sfide.</p>
+          </article>
+          <article class="card feature-card">
+            <div class="pill">Chi siamo</div>
+            <h3>Mission e team</h3>
+            <p>Una sezione dedicata a chi lavora nel laboratorio, ai suoi obiettivi e alla sua visione.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="didattica">
+        <div class="section-title">
+          <h2>Didattica, esami e materiale di studio</h2>
+          <span>Supporto per studiare con più serenità</span>
+        </div>
+        <div class="grid grid-2">
+          <article class="card feature-card">
+            <div class="pill">Forum</div>
+            <h3>Q&A e supporto agli esami</h3>
+            <p>Domande frequenti, chiarimenti su modalita d'esame e consigli per affrontare meglio il percorso accademico.</p>
+          </article>
+          <article class="card feature-card">
+            <div class="pill">Archivio</div>
+            <h3>Soluzioni ed esami passati</h3>
+            <p>Una raccolta ordinata di appunti, esercizi svolti, vecchi esami e indicazioni per esercitarsi.</p>
+          </article>
+          <article class="card feature-card">
+            <div class="pill">Tutor</div>
+            <h3>Find a Tutor</h3>
+            <p>Uno spazio semplice per trovare supporto tra studenti, con indicazioni su disponibilità e ambiti.</p>
+          </article>
+          <article class="card feature-card">
+            <div class="pill">Orario</div>
+            <h3>Lezioni e attività</h3>
+            <p>Un calendario integrato per tenere traccia delle lezioni, degli incontri e degli impegni del laboratorio.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="tesi">
+        <div class="section-title">
+          <h2>Tesi di laurea e orientamento</h2>
+          <span>Idee, proposte e spunti per il futuro</span>
+        </div>
+        <div class="grid grid-2">
+          <article class="card feature-card">
+            <div class="pill">Tesi</div>
+            <h3>Recensioni e proposte</h3>
+            <p>Spazio dedicato a temi di tesi, idee proposte dai docenti e possibili percorsi di sviluppo.</p>
+          </article>
+          <article class="card feature-card">
+            <div class="pill">Orientamento</div>
+            <h3>Un percorso più chiaro</h3>
+            <p>Un sito che aiuta a capire non solo cosa studiare, ma anche come muoversi nel mondo accademico.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="community">
+        <div class="section-title">
+          <h2>Community e strumenti interattivi</h2>
+          <span>Per restare aggiornati e organizzati</span>
+        </div>
+        <div class="grid grid-2">
+          <article class="card feature-card">
+            <div class="pill">Bacheca</div>
+            <h3>Annunci e comunicazioni</h3>
+            <p>Gli aggiornamenti più importanti, i nuovi eventi e le novità del laboratorio in un unico spazio.</p>
+          </article>
+          <article class="card feature-card">
+            <div class="pill">To-do</div>
+            <h3>Esami checklist</h3>
+            <p>Una checklist interattiva per tracciare l'avanzamento della preparazione e creare un piano personale.</p>
+          </article>
+        </div>
+
+        <div class="card" style="margin-top: 1rem;">
+          <h3 style="margin-top: 0;">Checklist personali per gli esami</h3>
+          <div class="checklist">
+            <label class="check-item">
+              <input type="checkbox" />
+              <span>Controllare il programma del corso</span>
+            </label>
+            <label class="check-item">
+              <input type="checkbox" />
+              <span>Rivedere gli appunti e le slide</span>
+            </label>
+            <label class="check-item">
+              <input type="checkbox" />
+              <span>Allenarsi con vecchi esami</span>
+            </label>
+            <label class="check-item">
+              <input type="checkbox" />
+              <span>Contattare un tutor se serve supporto</span>
+            </label>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>Pagina di ispirazione generata per il progetto Lab25A.</p>
+      </div>
+    </footer>
+
+    <script>
+      const today = document.getElementById("today");
+      if (today) {
+        today.textContent = new Date().toLocaleDateString("it-IT", {
+          day: "2-digit",
+          month: "short",
+          year: "numeric"
+        });
+      }
+
+      document.querySelectorAll(".check-item input").forEach((input) => {
+        input.addEventListener("change", () => {
+          input.closest(".check-item").classList.toggle("completed", input.checked);
+        });
+      });
+    </script>
+  </body>
+</html>
