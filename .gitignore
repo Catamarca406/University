@@ -1,2 +1,4 @@
-**/.trash/
+**/.trash/*
+.obsidian/*
+.vscode/*
 
